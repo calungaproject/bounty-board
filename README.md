@@ -7,10 +7,17 @@ This directory contains the prioritized bounty board for package security review
 ## Files
 
 ### Active Lists
-- **`bounty-board.txt`** - Master bounty list (796 packages)
+- **`bounty-board.txt`** - Master bounty list (1,721 packages)
   - Lines 1-24: HIGH PRIORITY (from multiple priority sources)
   - Lines 25-99: MEDIUM PRIORITY (secondary priority)
   - Lines 100+: LOWER PRIORITY (remaining packages)
+
+### Source Datasets
+- **`datasets/`** - Directory containing source package lists
+  - `dataset_00.txt` - 727 packages
+  - `dataset_01.txt` - 99 packages
+  - `dataset_02.txt` - 1,000 packages
+  - Merged automatically via `update_bounty_board.py`
 
 ### Documentation
 - **`summary.txt`** - Statistical breakdown of the lists
@@ -55,13 +62,14 @@ This will:
 
 ## Statistics (Current)
 
-- **Active Bounties:** 796 packages
-- **Cleared (all time):** 5 packages
-- **Last cleared:** 2026-06-26
-  - langchain
-  - langgraph
-  - openinference-instrumentation
-  - openinference-semantic-conventions
+- **Active Bounties:** 1,721 packages
+- **Cleared (all time):** 8 packages
+- **Last cleared:** 2026-06-29
+  - matplotlib-inline
+  - appdirs
+  - ipython
+  - PyPika
+  - langchain (and 3 others)
 
 ## Priority Categories
 
@@ -88,7 +96,24 @@ Lower priority packages. Suitable for:
 
 ### Adding New Packages
 
-To add packages to the bounty board:
+#### Option 1: Add via Dataset Files (Recommended)
+
+1. Add packages to a new or existing file in `datasets/` directory
+   - Name format: `dataset_XX.txt` (e.g., `dataset_03.txt`)
+   - One package per line
+2. Run the update script:
+   ```bash
+   python3 update_bounty_board.py
+   ```
+   - Automatically merges all datasets into `bounty-board.txt`
+   - Removes duplicates
+   - Preserves priority structure
+3. Regenerate frontend:
+   ```bash
+   python3 generate_frontend_data.py
+   ```
+
+#### Option 2: Manual Edit
 
 1. Edit `bounty-board.txt` directly, placing packages in the appropriate priority section
 2. Re-run `generate_frontend_data.py` to update the dashboard
@@ -143,7 +168,7 @@ Builds and deploys the frontend dashboard:
 
 The live dashboard displays:
 - Current bounty statistics (pre-rendered)
-- Complete bounty list (all 792 packages)
+- Complete bounty list (all 1,721 packages)
 - Recently cleared packages
 - Priority breakdown
 - Last update timestamp
