@@ -29,11 +29,9 @@ griffe
 intervaltree
 ipykernel
 ipynbname
-langchain-aws
 langchain-community
 langchain-milvus
 langchain-nvidia-ai-endpoints
-llama-cloud
 llama-cloud-services
 llama-index
 llama-index-agent-openai
