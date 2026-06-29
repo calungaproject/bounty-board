@@ -1,0 +1,24 @@
+# Cleared Bounties Log
+# Packages that were found in Red Hat trusted libraries and removed from bounty board
+# Format: YYYY-MM-DD HH:MM:SS | package-name
+
+# Cleared on 2026-06-26 14:41:05
+2026-06-26 14:41:05 | langchain | Position: 46 | Priority: MEDIUM (exploit interest)
+2026-06-26 14:41:05 | langgraph | Position: 51 | Priority: MEDIUM (exploit interest)
+2026-06-26 14:41:05 | openinference-instrumentation | Position: 69 | Priority: MEDIUM (exploit interest)
+2026-06-26 14:41:05 | openinference-semantic-conventions | Position: 80 | Priority: MEDIUM (exploit interest)
+
+# Cleared on 2026-06-29 08:22:07
+2026-06-29 08:22:07 | matplotlib-inline | Position: 10 | Priority: HIGH (both lists)
+2026-06-29 08:22:07 | appdirs | Position: 27 | Priority: MEDIUM (exploit interest)
+2026-06-29 08:22:07 | ipython | Position: 45 | Priority: MEDIUM (exploit interest)
+2026-06-29 08:22:07 | PyPika | Position: 616 | Priority: LOW (lightwell priority)
+
+# Cleared on 2026-06-29 10:55:08
+2026-06-29 10:55:08 | language-data | Position: 7 | Priority: HIGH (top priority)
+2026-06-29 10:55:08 | marisa-trie | Position: 9 | Priority: HIGH (top priority)
+2026-06-29 10:55:08 | pkce | Position: 14 | Priority: HIGH (top priority)
+2026-06-29 10:55:08 | pystache | Position: 16 | Priority: HIGH (top priority)
+2026-06-29 10:55:08 | requests-futures | Position: 17 | Priority: HIGH (top priority)
+2026-06-29 10:55:08 | cross-web | Position: 209 | Priority: LOW (lower priority)
+
