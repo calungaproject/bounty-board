@@ -3,6 +3,7 @@
 
 from datetime import datetime
 from pathlib import Path
+from urllib.parse import quote
 import html
 
 
@@ -97,10 +98,18 @@ def generate_bounty_html(bounties):
         category = html.escape(bounty["category"])
         priority = bounty["priority"]
 
+        # Generate PR search URL (PRs are named onboard/<package-name>)
+        pr_search = f"onboard/{bounty['package']}"
+        pr_url = f"https://github.com/calungaproject/index/pulls?q={quote(pr_search)}"
+        pr_title = f"Search for PRs for {package}"
+
         html_parts.append(f'''
             <div class="bounty-item" data-priority="{priority}" data-package="{package.lower()}">
                 <div class="bounty-info">
-                    <div class="package-name">{package}</div>
+                    <div class="package-name">
+                        {package}
+                        <a href="{pr_url}" class="pr-link" target="_blank" rel="noopener noreferrer" title="{pr_title}">[PR]</a>
+                    </div>
                     <div class="package-category">{category}</div>
                 </div>
                 <div class="priority-badge priority-{priority}">{priority}</div>
@@ -328,6 +337,29 @@ def generate_html(bounties, cleared, stats):
             margin-top: 5px;
         }}
 
+        .pr-link {{
+            margin-left: 8px;
+            font-size: 0.75em;
+            color: #6c757d;
+            text-decoration: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            font-weight: 500;
+            padding: 2px 6px;
+            border-radius: 3px;
+            background: #f8f9fa;
+            border: 1px solid #dee2e6;
+            transition: all 0.2s ease;
+            display: inline-block;
+            vertical-align: middle;
+        }}
+
+        .pr-link:hover {{
+            color: #667eea;
+            background: #e7f1ff;
+            border-color: #667eea;
+            text-decoration: none;
+        }}
+
         .priority-badge {{
             padding: 8px 16px;
             border-radius: 20px;
@@ -454,6 +486,12 @@ def generate_html(bounties, cleared, stats):
                 flex-direction: column;
                 align-items: flex-start;
                 gap: 10px;
+            }}
+
+            .pr-link {{
+                font-size: 0.7em;
+                padding: 1px 4px;
+                margin-left: 6px;
             }}
         }}
     </style>
