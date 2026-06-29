@@ -131,7 +131,7 @@ def generate_cleared_html(cleared):
         ''')
 
     section_html = f'''
-        <div class="cleared-section">
+        <div class="cleared-section" id="cleared-bounties">
             <h2>Recently Cleared Bounties</h2>
             <div class="cleared-list">
                 {''.join(html_parts)}
@@ -402,6 +402,37 @@ def generate_html(bounties, cleared, stats):
             background: #f8f9fa;
             color: #6c757d;
             font-size: 0.9em;
+            position: relative;
+        }}
+
+        .back-to-top {{
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s;
+            box-shadow: 0 2px 8px rgba(102, 126, 234, 0.3);
+        }}
+
+        .back-to-top:hover {{
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+        }}
+
+        .stat-card a {{
+            color: #667eea;
+            text-decoration: none;
+            transition: color 0.3s;
+        }}
+
+        .stat-card a:hover {{
+            color: #5568d3;
+            text-decoration: underline;
         }}
 
         @media (max-width: 768px) {{
@@ -449,7 +480,7 @@ def generate_html(bounties, cleared, stats):
             </div>
             <div class="stat-card">
                 <div class="number">{stats['total_cleared']}</div>
-                <div class="label">Cleared</div>
+                <div class="label"><a href="#cleared-bounties">Cleared</a></div>
             </div>
         </div>
 
@@ -475,6 +506,7 @@ def generate_html(bounties, cleared, stats):
         <footer>
             <p>Last updated: {stats['last_updated']}</p>
             <p>Automated updates via GitHub Actions</p>
+            <a href="#" class="back-to-top">↑ Back to Top</a>
         </footer>
     </div>
 
