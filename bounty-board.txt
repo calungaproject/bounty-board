@@ -15,7 +15,6 @@ sqlean-py
 thinc
 tokenizers
 aiohttp-client-cache
-arpy
 banks
 beniget
 cint
@@ -30,8 +29,6 @@ intervaltree
 ipykernel
 ipynbname
 langchain-community
-langchain-milvus
-langchain-nvidia-ai-endpoints
 llama-cloud-services
 llama-index
 llama-index-agent-openai
@@ -58,11 +55,7 @@ openinference-instrumentation-llama-index
 openinference-instrumentation-mistralai
 openinference-instrumentation-openai-agents
 openinference-instrumentation-smolagents
-pgpy13
 polyfile-weave
-prefixspan
-pydpkg
-pymilvus
 pyreadline3
 pythran
 ragaai-catalyst
@@ -71,9 +64,6 @@ rank-bm25
 scikit-learn
 scipy
 stdlib-list
-striprtf
-tantivy
-univers
 wandb
 weave
 wikipedia

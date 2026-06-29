@@ -34,3 +34,15 @@
 2026-06-29 16:28:28 | langchain-aws | Position: 32 | Priority: MEDIUM (secondary priority)
 2026-06-29 16:28:28 | llama-cloud | Position: 36 | Priority: MEDIUM (secondary priority)
 
+# Cleared on 2026-06-29 17:09:34
+2026-06-29 17:09:34 | arpy | Position: 18 | Priority: HIGH (top priority)
+2026-06-29 17:09:34 | langchain-milvus | Position: 33 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | langchain-nvidia-ai-endpoints | Position: 34 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | pgpy13 | Position: 61 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | prefixspan | Position: 63 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | pydpkg | Position: 64 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | pymilvus | Position: 65 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | striprtf | Position: 74 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | tantivy | Position: 75 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | univers | Position: 76 | Priority: MEDIUM (secondary priority)
+
