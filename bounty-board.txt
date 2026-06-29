@@ -292,7 +292,6 @@ google-adk
 google-cloud
 google-cloud-access-context-manager
 google-cloud-aiplatform
-google-cloud-discoveryengine
 google-cloud-functions
 google-cloud-org-policy
 google-cloud-os-config
@@ -302,12 +301,9 @@ google-cloud-service-usage
 google-generativeai
 grandalf
 greenery
-gym
-gym-notices
 h5py
 hdfs
 healthcheck
-http-exceptions
 httpx-auth
 httpx-ntlm
 httpx-retries
