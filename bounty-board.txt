@@ -287,12 +287,8 @@ fmriprep
 frozendict
 func-timeout
 gascompressibility
-gdrive-core
 getpass4
-git-fame
-google
 google-adk
-google-apitools
 google-cloud
 google-cloud-access-context-manager
 google-cloud-aiplatform
