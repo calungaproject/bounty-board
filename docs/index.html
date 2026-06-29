@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bounty Board - Package Security Review</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .stat-card .number {
+            font-size: 2.5em;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .label {
+            font-size: 0.9em;
+            color: #6c757d;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .controls {
+            padding: 30px 40px;
+            background: white;
+            border-bottom: 1px solid #e9ecef;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 12px 20px;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #e9ecef;
+            background: white;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 0.9em;
+            font-weight: 600;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover {
+            border-color: #667eea;
+            color: #667eea;
+        }
+
+        .filter-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .bounty-list {
+            padding: 40px;
+        }
+
+        .bounty-item {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            transition: all 0.3s;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .bounty-item:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .bounty-info {
+            flex: 1;
+        }
+
+        .package-name {
+            font-size: 1.2em;
+            font-weight: 600;
+            color: #333;
+            font-family: 'Monaco', 'Courier New', monospace;
+        }
+
+        .package-category {
+            font-size: 0.85em;
+            color: #6c757d;
+            margin-top: 5px;
+        }
+
+        .priority-badge {
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .priority-HIGH {
+            background: #dc3545;
+            color: white;
+        }
+
+        .priority-MEDIUM {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .priority-LOW {
+            background: #28a745;
+            color: white;
+        }
+
+        .cleared-section {
+            padding: 40px;
+            background: #f8f9fa;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .cleared-section h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        .cleared-item {
+            background: white;
+            border-left: 4px solid #28a745;
+            padding: 15px 20px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .cleared-package {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-weight: 600;
+        }
+
+        .cleared-date {
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #6c757d;
+            font-size: 1.1em;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            font-size: 1.2em;
+            color: #667eea;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-size: 0.9em;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .controls {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .filter-buttons {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .bounty-item {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Bounty Board</h1>
+            <p>Package Security Review Priorities</p>
+        </header>
+
+        <div class="stats" id="stats">
+            <div class="stat-card">
+                <div class="number" id="total-active">-</div>
+                <div class="label">Active Bounties</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="high-priority">-</div>
+                <div class="label">High Priority</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="medium-priority">-</div>
+                <div class="label">Medium Priority</div>
+            </div>
+            <div class="stat-card">
+                <div class="number" id="total-cleared">-</div>
+                <div class="label">Cleared</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="search" placeholder="Search packages...">
+            </div>
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="ALL">All</button>
+                <button class="filter-btn" data-filter="HIGH">High</button>
+                <button class="filter-btn" data-filter="MEDIUM">Medium</button>
+                <button class="filter-btn" data-filter="LOW">Low</button>
+            </div>
+        </div>
+
+        <div class="bounty-list">
+            <div class="loading">Loading bounties...</div>
+        </div>
+
+        <div class="cleared-section" id="cleared-section" style="display: none;">
+            <h2>Recently Cleared Bounties</h2>
+            <div id="cleared-list"></div>
+        </div>
+
+        <footer>
+            <p>Last updated: <span id="last-updated">-</span></p>
+            <p>Automated updates via GitHub Actions</p>
+        </footer>
+    </div>
+
+    <script>
+        let allBounties = [];
+        let currentFilter = 'ALL';
+        let searchTerm = '';
+
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+
+                allBounties = data.bounties;
+                updateStats(data.statistics);
+                updateCleared(data.cleared);
+                renderBounties();
+            } catch (error) {
+                document.querySelector('.bounty-list').innerHTML =
+                    '<div class="no-results">Error loading data. Please try again later.</div>';
+                console.error('Error loading data:', error);
+            }
+        }
+
+        function updateStats(stats) {
+            document.getElementById('total-active').textContent = stats.total_active;
+            document.getElementById('high-priority').textContent = stats.priority_counts.HIGH;
+            document.getElementById('medium-priority').textContent = stats.priority_counts.MEDIUM;
+            document.getElementById('total-cleared').textContent = stats.total_cleared;
+            document.getElementById('last-updated').textContent =
+                new Date(stats.last_updated).toLocaleString();
+        }
+
+        function updateCleared(cleared) {
+            if (cleared.length === 0) return;
+
+            const clearedSection = document.getElementById('cleared-section');
+            const clearedList = document.getElementById('cleared-list');
+
+            const recentCleared = cleared.slice(-5).reverse();
+            clearedList.innerHTML = recentCleared.map(item => `
+                <div class="cleared-item">
+                    <span class="cleared-package">${item.package}</span>
+                    <span class="cleared-date">${item.timestamp}</span>
+                </div>
+            `).join('');
+
+            clearedSection.style.display = 'block';
+        }
+
+        function renderBounties() {
+            const filtered = allBounties.filter(bounty => {
+                const matchesFilter = currentFilter === 'ALL' || bounty.priority === currentFilter;
+                const matchesSearch = searchTerm === '' ||
+                    bounty.package.toLowerCase().includes(searchTerm.toLowerCase());
+                return matchesFilter && matchesSearch;
+            });
+
+            const listContainer = document.querySelector('.bounty-list');
+
+            if (filtered.length === 0) {
+                listContainer.innerHTML = '<div class="no-results">No bounties found matching your criteria.</div>';
+                return;
+            }
+
+            listContainer.innerHTML = filtered.map(bounty => `
+                <div class="bounty-item">
+                    <div class="bounty-info">
+                        <div class="package-name">${bounty.package}</div>
+                        <div class="package-category">${bounty.category}</div>
+                    </div>
+                    <div class="priority-badge priority-${bounty.priority}">${bounty.priority}</div>
+                </div>
+            `).join('');
+        }
+
+        // Event listeners
+        document.getElementById('search').addEventListener('input', (e) => {
+            searchTerm = e.target.value;
+            renderBounties();
+        });
+
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                e.target.classList.add('active');
+                currentFilter = e.target.dataset.filter;
+                renderBounties();
+            });
+        });
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>

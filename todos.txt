@@ -1,4 +1,4 @@
-datasets dir
-make a git repo
-github action workflow that runs the script
-frontend on github pages that generates from results
+[✓] datasets dir
+[✓] make a git repo
+[✓] github action workflow that runs the script
+[✓] frontend on github pages that generates from results

@@ -1,0 +1,58 @@
+name: Update Bounty Board
+
+on:
+  schedule:
+    # Run weekly on Monday at 9 AM UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'check_cleared_bounties.py'
+      - 'bounty-board.txt'
+      - 'datasets/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-bounties:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Check for cleared bounties
+        run: |
+          python check_cleared_bounties.py
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add bounty-board.txt cleared-bounties.log
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update bounty board - $(date +'%Y-%m-%d')"
+            git push
+          fi
+
+      - name: Upload cleared bounties log
+        uses: actions/upload-artifact@v4
+        with:
+          name: cleared-bounties-log
+          path: cleared-bounties.log
+          retention-days: 90
