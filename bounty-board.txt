@@ -4,17 +4,12 @@ arize-phoenix-otel
 gitpython
 hf-xet
 huggingface-hub
-language-data
 litellm
-marisa-trie
 openinference-instrumentation-google-adk
 openinference-instrumentation-langchain
 openinference-instrumentation-openai
 openinference-instrumentation-vertexai
-pkce
 pyarrow
-pystache
-requests-futures
 spacy
 sqlean-py
 strawberry-graphql
@@ -206,7 +201,6 @@ confluent-kafka
 contextvars
 CoVeriTeam
 crispy-bootstrap5
-cross-web
 crypto
 crystalwindow
 cssbeautifier
