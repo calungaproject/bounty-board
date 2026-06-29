@@ -69,7 +69,6 @@ weave
 wikipedia
 a2a-sdk
 a2wsgi
-absolufy-imports
 acceldata-sdk
 accessible-pygments
 adbc-driver-flightsql
