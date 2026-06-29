@@ -27,7 +27,7 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Generate frontend data
+      - name: Generate static HTML site
         run: |
           python generate_frontend_data.py
 

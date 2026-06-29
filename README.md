@@ -128,8 +128,8 @@ Automatically checks for cleared bounties and updates the board:
 Builds and deploys the frontend dashboard:
 - **Trigger**: Push to main branch, or manual dispatch
 - **Actions**:
-  - Generates `docs/data.json` from current bounty data
-  - Deploys static site to GitHub Pages
+  - Generates fully static HTML from current bounty data
+  - Deploys to GitHub Pages (works without JavaScript)
 
 ### Setup Instructions
 
@@ -148,25 +148,30 @@ Builds and deploys the frontend dashboard:
 ### Frontend Dashboard
 
 The live dashboard displays:
-- Current bounty statistics
-- Searchable and filterable bounty list
+- Current bounty statistics (pre-rendered)
+- Complete bounty list (all 792 packages)
 - Recently cleared packages
 - Priority breakdown
 - Last update timestamp
+
+**Features:**
+- Fully static HTML - works without JavaScript
+- Progressive enhancement: search and filtering require JavaScript
+- Fast loading - all content pre-rendered server-side
 
 Access the dashboard at your GitHub Pages URL once deployed.
 
 ## Local Development
 
-### Generate Frontend Data
+### Generate Static HTML Site
 
 ```bash
 python3 generate_frontend_data.py
 ```
 
-This creates `docs/data.json` from the current bounty board state.
+This generates `docs/index.html` with all bounty data pre-rendered.
 
-### Preview Frontend Locally
+### Preview Site Locally
 
 ```bash
 cd docs
@@ -174,3 +179,5 @@ python3 -m http.server 8000
 ```
 
 Then open `http://localhost:8000` in your browser.
+
+The site is fully functional without JavaScript - all content is visible. JavaScript provides optional filtering and search enhancements.
