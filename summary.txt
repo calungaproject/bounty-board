@@ -1,21 +1,18 @@
 Bounty Board Summary
 ===================
 
-Source Files:
-  - exploit_int_packages.txt: 99 packages
-  - lw_prios_valid.txt: 727 packages
-
-Intersection Analysis:
-  - Packages in BOTH lists: 24
-  - Packages only in exploit_int: 75
-  - Packages only in lw_prios_valid: 701
+Priority Distribution:
+  - High Priority: 24 packages
+  - Medium Priority: 75 packages
+  - Lower Priority: 701 packages
+  - Total: 800 packages
 
 Output File Structure (bounty-board.txt):
-  Lines 1-24: Packages in BOTH lists (highest priority)
-  Lines 25-99: Exploit interest only
-  Lines 100-800: Lightwell priority only
+  Lines 1-24: High priority packages
+  Lines 25-99: Medium priority packages
+  Lines 100-800: Lower priority packages
 
-Packages in BOTH lists (intersection):
+High Priority Packages (Lines 1-24):
   - arize-phoenix
   - arize-phoenix-evals
   - arize-phoenix-otel

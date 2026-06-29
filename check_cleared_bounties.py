@@ -84,11 +84,11 @@ def append_to_cleared_log(log_path, cleared_packages):
 def get_priority_level(position):
     """Determine priority level based on position in bounty board"""
     if position <= 24:
-        return "HIGH (both lists)"
+        return "HIGH (top priority)"
     elif position <= 99:
-        return "MEDIUM (exploit interest)"
+        return "MEDIUM (secondary priority)"
     else:
-        return "LOW (lightwell priority)"
+        return "LOW (lower priority)"
 
 def main():
     bounty_board_path = Path('bounty-board.txt')

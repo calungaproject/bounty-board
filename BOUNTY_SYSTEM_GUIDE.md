@@ -14,42 +14,25 @@ A complete system for managing security bounty package priorities, with automati
 python3 check_cleared_bounties.py
 
 # View detailed analysis
-cat bounty-board/ANALYSIS.md
+cat ANALYSIS.md
 ```
 
 ## System Components
 
-### 1. Source Data
-- **`lightwell/lightwell_prios_sanitized.csv`** - Original Lightwell priorities (1,216 packages)
-- **`bounty-board/exploit_int_packages.txt`** - Exploit research interests (99 packages)
+### 1. Active Bounty Board
 
-### 2. Filtering Pipeline
-```
-lightwell_prios_sanitized.csv (1,216)
-         ↓
-   filter_packages.py
-         ↓ (removes trusted + failed PRs)
-lw_prios_valid.txt (727)
-         ↓
-   analyze_bounty_board.py
-         ↓ (merges with exploit_int)
-bounty-board.txt (800 → 796)
-```
-
-### 3. Active Bounty Board
-
-**`bounty-board/bounty-board.txt`** - Priority-sorted master list
+**`bounty-board.txt`** - Priority-sorted master list
 
 Structure:
 ```
-Lines   1-24  : HIGH PRIORITY (in both lists)
-Lines  25-99  : MEDIUM PRIORITY (exploit interest only)
-Lines 100-796 : LOW PRIORITY (lightwell only)
+Lines   1-24  : HIGH PRIORITY
+Lines  25-99  : MEDIUM PRIORITY
+Lines 100-796 : LOW PRIORITY
 ```
 
 Current: **796 active packages**
 
-### 4. Cleared Bounties Tracking
+### 2. Cleared Bounties Tracking
 
 **`check_cleared_bounties.py`** - Automatic clearing script
 - Fetches Red Hat trusted libraries index
@@ -57,12 +40,12 @@ Current: **796 active packages**
 - Removes cleared packages
 - Logs with timestamp, position, priority
 
-**`bounty-board/cleared-bounties.log`** - Historical record
+**`cleared-bounties.log`** - Historical record
 - All cleared packages with timestamps
 - Original position and priority level
 - Useful for progress tracking
 
-### 5. Monitoring Tools
+### 3. Monitoring Tools
 
 **`bounty_stats.sh`** - Quick status display
 ```bash
@@ -85,7 +68,6 @@ Current: **796 active packages**
 
 2. **Work through priorities**
    - Focus on lines 1-24 (HIGH priority)
-   - These are in BOTH exploit interest and lightwell lists
    - Expected highest ROI
 
 3. **Weekly clearing check**
@@ -119,7 +101,7 @@ Categories:
   - Templating, data structures, URL handling
 
 #### MEDIUM Priority (71 packages, lines 25-99)
-Exploit research targets - secondary focus
+Secondary focus targets
 
 Characteristics:
 - Advanced frameworks
@@ -135,26 +117,6 @@ Suitable for:
 - Background work
 
 ## Scripts Reference
-
-### `filter_packages.py`
-Filters Lightwell CSV against:
-- Red Hat trusted libraries
-- Failed GitHub onboarding PRs
-
-```bash
-python3 filter_packages.py
-# Output: lightwell/lw_prios_valid.txt
-```
-
-### `analyze_bounty_board.py`
-Merges and analyzes two package lists
-
-```bash
-python3 analyze_bounty_board.py
-# Outputs:
-# - bounty-board/bounty-board.txt (master list)
-# - bounty-board/summary.txt (stats)
-```
 
 ### `check_cleared_bounties.py` ⭐
 **Run this regularly** - Main maintenance script
@@ -181,25 +143,32 @@ Quick status dashboard
 # Shows snapshot of current state
 ```
 
+### `generate_frontend_data.py`
+Generates static HTML dashboard
+
+```bash
+python3 generate_frontend_data.py
+# Outputs: docs/index.html (complete static site)
+```
+
 ## File Structure
 
 ```
-├── lightwell/
-│   ├── lightwell_prios_sanitized.csv   (original data)
-│   └── lw_prios_valid.txt              (filtered)
-├── bounty-board/
-│   ├── bounty-board.txt                (MASTER LIST - 796 packages)
-│   ├── exploit_int_packages.txt        (source: exploit interest)
-│   ├── lw_prios_valid.txt              (source: lightwell valid)
-│   ├── cleared-bounties.log            (cleared packages history)
-│   ├── summary.txt                     (statistics)
-│   ├── ANALYSIS.md                     (detailed analysis)
-│   └── README.md                       (directory guide)
-├── filter_packages.py                  (step 1: filter)
-├── analyze_bounty_board.py             (step 2: merge)
-├── check_cleared_bounties.py           (maintenance: clear)
-├── bounty_stats.sh                     (monitoring: status)
-└── BOUNTY_SYSTEM_GUIDE.md              (this file)
+.
+├── bounty-board.txt                (MASTER LIST - 796 packages)
+├── cleared-bounties.log            (cleared packages history)
+├── ANALYSIS.md                     (detailed analysis)
+├── README.md                       (directory guide)
+├── check_cleared_bounties.py       (maintenance: clear)
+├── bounty_stats.sh                 (monitoring: status)
+├── generate_frontend_data.py       (frontend: generate HTML)
+├── docs/
+│   └── index.html                  (public dashboard)
+├── .github/
+│   └── workflows/
+│       ├── update-bounties.yml     (auto-check cleared)
+│       └── deploy-pages.yml        (auto-deploy dashboard)
+└── BOUNTY_SYSTEM_GUIDE.md          (this file)
 ```
 
 ## Statistics (Current)
@@ -213,20 +182,34 @@ Quick status dashboard
 | Cleared (all time) | 5 |
 | Last cleared | 2026-06-26 |
 
-## Recent Activity
+## GitHub Integration
 
-**Cleared on 2026-06-26 14:41:05:**
-- langchain (MEDIUM priority, position 46)
-- langgraph (MEDIUM priority, position 51)
-- openinference-instrumentation (MEDIUM, position 69)
-- openinference-semantic-conventions (MEDIUM, position 80)
+### Automated Workflows
+
+The repository includes two GitHub Actions workflows:
+
+1. **Update Bounty Board** - Weekly automated check
+   - Runs `check_cleared_bounties.py`
+   - Commits changes automatically
+   - Uploads logs as artifacts
+
+2. **Deploy Dashboard** - Automatic deployment
+   - Generates static HTML
+   - Deploys to GitHub Pages
+   - Updates on every push to main
+
+### Setup
+
+1. Enable GitHub Actions in repository settings
+2. Enable GitHub Pages (Source: "GitHub Actions")
+3. Configure workflow permissions: "Read and write"
 
 ## Automation Options
 
 ### Cron Job (Weekly Check)
 ```bash
 # Add to crontab
-0 9 * * 1 cd /path/to/project && python3 check_cleared_bounties.py >> bounty-board/cron.log 2>&1
+0 9 * * 1 cd /path/to/project && python3 check_cleared_bounties.py >> cron.log 2>&1
 ```
 
 ### Git Hook (Pre-commit)
@@ -234,28 +217,6 @@ Quick status dashboard
 #!/bin/bash
 # .git/hooks/pre-commit
 python3 check_cleared_bounties.py --quiet
-```
-
-### CI/CD Integration
-```yaml
-# GitHub Actions example
-name: Check Cleared Bounties
-on:
-  schedule:
-    - cron: '0 9 * * 1'  # Weekly Monday 9am
-jobs:
-  check:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Check cleared bounties
-        run: python3 check_cleared_bounties.py
-      - name: Commit changes
-        run: |
-          git config user.name "Bounty Bot"
-          git add bounty-board/
-          git commit -m "Update cleared bounties" || true
-          git push
 ```
 
 ## Best Practices
@@ -286,37 +247,30 @@ python3 check_cleared_bounties.py 2>&1 | less
 ```bash
 # 1. Edit bounty-board.txt (remove line)
 # 2. Add to cleared-bounties.log
-echo "$(date '+%Y-%m-%d %H:%M:%S') | package-name | Manual removal | Reason" >> bounty-board/cleared-bounties.log
+echo "$(date '+%Y-%m-%d %H:%M:%S') | package-name | Manual removal | Reason" >> cleared-bounties.log
 ```
 
 ## Maintenance
 
-### Updating Source Lists
+### Updating Package List
 
-When new packages are added to sources:
+To add new packages:
 
-1. Update `exploit_int_packages.txt` or rerun filter on new Lightwell CSV
-2. Regenerate bounty board:
-   ```bash
-   python3 analyze_bounty_board.py
-   ```
-3. Run clearing check:
-   ```bash
-   python3 check_cleared_bounties.py
-   ```
+1. Edit `bounty-board.txt` directly, placing packages in appropriate priority section
+2. Run `python3 generate_frontend_data.py` to update dashboard
+3. Run `python3 check_cleared_bounties.py` to check against trusted libraries
 
 ### Archive Old Logs
 
 Periodically archive cleared-bounties.log:
 ```bash
-cp bounty-board/cleared-bounties.log bounty-board/cleared-bounties-$(date +%Y%m%d).log
-# Keep recent entries only if needed
+cp cleared-bounties.log cleared-bounties-$(date +%Y%m%d).log
 ```
 
 ## Support
 
 For issues or questions about the bounty system:
 1. Check this guide
-2. Review `bounty-board/README.md`
-3. Check `bounty-board/ANALYSIS.md` for package insights
+2. Review `README.md`
+3. Check `ANALYSIS.md` for package insights
 4. Review script comments for technical details

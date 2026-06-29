@@ -6,35 +6,37 @@ Analysis of two package priority lists to identify high-value targets for securi
 
 ## Source Files
 
-| File | Packages | Description |
-|------|----------|-------------|
-| `exploit_int_packages.txt` | 99 | Packages of interest for exploit research |
-| `lw_prios_valid.txt` | 727 | Lightwell priority packages (filtered) |
-| **Total unique** | **800** | Combined from both sources |
+Multiple priority sources were analyzed to identify high-value security review targets.
 
-## Intersection Analysis
+| Priority Level | Packages | Description |
+|------|----------|-------------|
+| High Priority | 24 | Packages from multiple priority sources |
+| Medium Priority | 75 | Secondary priority packages |
+| Lower Priority | 701 | Additional packages for review |
+| **Total unique** | **800** | Combined from all sources |
+
+## Priority Distribution
 
 ```
 ┌─────────────────────────────────────────┐
-│  INTERSECTION: 24 packages              │
-│  (Packages in BOTH lists)               │
+│  HIGH PRIORITY: 24 packages             │
 │  → HIGHEST PRIORITY TARGETS             │
 └─────────────────────────────────────────┘
          │
-         ├─ exploit_int only: 75 packages
+         ├─ Medium Priority: 75 packages
          │
-         └─ lw_prios_valid only: 701 packages
+         └─ Lower Priority: 701 packages
 ```
 
 ### Key Statistics
 
-- **24 packages** appear in both lists (3.0% of total)
-- **75 packages** unique to exploit interest (9.4%)
-- **701 packages** unique to lightwell priorities (87.6%)
+- **24 packages** in high priority tier (3.0% of total)
+- **75 packages** in medium priority tier (9.4%)
+- **701 packages** in lower priority tier (87.6%)
 
-## High Priority Targets (In Both Lists)
+## High Priority Targets
 
-These 24 packages are prioritized by BOTH exploit research interest AND lightwell priorities:
+These 24 packages represent the highest priority security review targets:
 
 ### AI/ML Ecosystem (10 packages)
 1. `arize-phoenix` - ML observability platform
@@ -73,16 +75,16 @@ These 24 packages are prioritized by BOTH exploit research interest AND lightwel
 The combined list is organized for maximum utility:
 
 ```
-Lines 1-24:    HIGH PRIORITY (in both lists)
-Lines 25-99:   MEDIUM PRIORITY (exploit interest only)
-Lines 100-800: LOWER PRIORITY (lightwell only)
+Lines 1-24:    HIGH PRIORITY
+Lines 25-99:   MEDIUM PRIORITY
+Lines 100-800: LOWER PRIORITY
 ```
 
 ### Usage
 
 Work through the file top-to-bottom:
 - **Lines 1-24**: Focus here first - highest ROI
-- **Lines 25-99**: Secondary targets - exploit interest
+- **Lines 25-99**: Secondary targets
 - **Lines 100-800**: Tertiary targets - volume work
 
 ## Notable Patterns

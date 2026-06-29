@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """
-Analyze intersection of exploit_int_packages.txt and lw_prios_valid.txt
-and create a combined bounty-board.txt
+DEPRECATED: This script was used to generate the initial bounty-board.txt
+from source datasets. The bounty board is now maintained directly.
+
+For current operations, use:
+- check_cleared_bounties.py - Check and remove cleared packages
+- generate_frontend_data.py - Generate static HTML dashboard
 """
 
 from pathlib import Path

@@ -18,13 +18,13 @@ def parse_bounty_board(filepath):
             # Determine priority based on line number
             if idx <= 24:
                 priority = "HIGH"
-                category = "Both lists (exploit + lightwell)"
+                category = "High priority - multiple sources"
             elif idx <= 99:
                 priority = "MEDIUM"
-                category = "Exploit interest"
+                category = "Medium priority"
             else:
                 priority = "LOW"
-                category = "Lightwell priority"
+                category = "Lower priority"
 
             bounties.append({
                 "id": idx,

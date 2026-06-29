@@ -8,13 +8,9 @@ This directory contains the prioritized bounty board for package security review
 
 ### Active Lists
 - **`bounty-board.txt`** - Master bounty list (796 packages)
-  - Lines 1-24: HIGH PRIORITY (in both exploit interest and lightwell lists)
-  - Lines 25-99: MEDIUM PRIORITY (exploit interest only)
-  - Lines 100+: LOWER PRIORITY (lightwell priority only)
-
-### Source Lists
-- **`exploit_int_packages.txt`** - Packages of interest for exploit research (99 packages)
-- **`lw_prios_valid.txt`** - Lightwell priority packages, filtered (727 packages)
+  - Lines 1-24: HIGH PRIORITY (from multiple priority sources)
+  - Lines 25-99: MEDIUM PRIORITY (secondary priority)
+  - Lines 100+: LOWER PRIORITY (remaining packages)
 
 ### Documentation
 - **`summary.txt`** - Statistical breakdown of the lists
@@ -43,11 +39,9 @@ This will:
 ### Workflow
 
 1. **Start with high priority packages** (lines 1-24)
-   - These appear in both source lists
    - Highest expected ROI
 
 2. **Work through medium priority** (lines 25-99)
-   - Exploit interest packages
    - Secondary targets
 
 3. **Batch process lower priority** (lines 100+)
@@ -72,20 +66,20 @@ This will:
 ## Priority Categories
 
 ### HIGH (Lines 1-24)
-Packages appearing in **both** source lists. Focus areas:
+Highest priority packages. Focus areas:
 - AI/ML infrastructure (42%)
 - OpenTelemetry instrumentation (17%)
 - Security primitives (12%)
 - Data utilities (29%)
 
 ### MEDIUM (Lines 25-99)
-Exploit research interest only. Notable patterns:
+Medium priority packages. Notable patterns:
 - Advanced AI frameworks
 - Security testing tools
 - Data processing libraries
 
 ### LOW (Lines 100+)
-Lightwell priority only. Suitable for:
+Lower priority packages. Suitable for:
 - Automated scanning
 - Batch processing
 - Background work
@@ -96,8 +90,8 @@ Lightwell priority only. Suitable for:
 
 To add packages to the bounty board:
 
-1. Add to appropriate source list (`exploit_int_packages.txt` or `lw_prios_valid.txt`)
-2. Re-run the analysis script to regenerate `bounty-board.txt`
+1. Edit `bounty-board.txt` directly, placing packages in the appropriate priority section
+2. Re-run `generate_frontend_data.py` to update the dashboard
 
 ### Removing Packages
 
