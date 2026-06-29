@@ -2,8 +2,8 @@ name: Update Bounty Board
 
 on:
   schedule:
-    # Run weekly on Monday at 9 AM UTC
-    - cron: '0 9 * * 1'
+    # Run every hour at 7 minutes past the hour
+    - cron: '7 * * * *'
   workflow_dispatch:
   push:
     branches:

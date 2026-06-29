@@ -7,7 +7,7 @@ This directory contains the prioritized bounty board for package security review
 ## Files
 
 ### Active Lists
-- **`bounty-board.txt`** - Master bounty list (792 packages)
+- **`bounty-board.txt`** - Master bounty list
   - Lines 1-24: HIGH PRIORITY (from multiple priority sources)
   - Lines 25-99: MEDIUM PRIORITY (secondary priority)
   - Lines 100+: LOWER PRIORITY (remaining packages)
@@ -55,20 +55,16 @@ This will:
    - Consider automation
 
 4. **Regularly check for cleared packages**
-   - Run `check_cleared_bounties.py` weekly
+   - Automated hourly via GitHub Actions
+   - Or run manually: `check_cleared_bounties.py`
    - Cleared packages are automatically removed
    - Review `cleared-bounties.log` for progress tracking
 
-## Statistics (Current)
+## Statistics
 
-- **Active Bounties:** 792 packages
-- **Cleared (all time):** 8 packages
-- **Last cleared:** 2026-06-29
-  - matplotlib-inline
-  - appdirs
-  - ipython
-  - PyPika
-  - langchain (and 3 others)
+Current statistics are displayed on the live dashboard at your GitHub Pages URL.
+
+The automated workflow checks for cleared bounties hourly and updates both the bounty board and the dashboard.
 
 ## Priority Categories
 
@@ -134,7 +130,7 @@ The repository includes two GitHub Actions workflows:
 #### 1. Update Bounty Board (`.github/workflows/update-bounties.yml`)
 
 Automatically checks for cleared bounties and updates the board:
-- **Schedule**: Weekly on Monday at 9 AM UTC
+- **Schedule**: Hourly (runs at 7 minutes past each hour)
 - **Triggers**: Manual dispatch, or changes to relevant files
 - **Actions**:
   - Runs `check_cleared_bounties.py`
@@ -167,8 +163,8 @@ Builds and deploys the frontend dashboard:
 
 The live dashboard displays:
 - Current bounty statistics (pre-rendered)
-- Complete bounty list (all 792 packages)
-- Recently cleared packages
+- Complete bounty list with all active packages
+- Recently cleared packages (last 5)
 - Priority breakdown
 - Last update timestamp
 
