@@ -1,0 +1,42 @@
+Bounty Board Summary
+===================
+
+Source Files:
+  - exploit_int_packages.txt: 99 packages
+  - lw_prios_valid.txt: 727 packages
+
+Intersection Analysis:
+  - Packages in BOTH lists: 24
+  - Packages only in exploit_int: 75
+  - Packages only in lw_prios_valid: 701
+
+Output File Structure (bounty-board.txt):
+  Lines 1-24: Packages in BOTH lists (highest priority)
+  Lines 25-99: Exploit interest only
+  Lines 100-800: Lightwell priority only
+
+Packages in BOTH lists (intersection):
+  - arize-phoenix
+  - arize-phoenix-evals
+  - arize-phoenix-otel
+  - gitpython
+  - hf-xet
+  - huggingface-hub
+  - language-data
+  - litellm
+  - marisa-trie
+  - matplotlib-inline
+  - openinference-instrumentation-google-adk
+  - openinference-instrumentation-langchain
+  - openinference-instrumentation-openai
+  - openinference-instrumentation-vertexai
+  - pkce
+  - pyarrow
+  - pystache
+  - requests-futures
+  - spacy
+  - sqlean-py
+  - strawberry-graphql
+  - thinc
+  - tokenizers
+  - url-normalize
