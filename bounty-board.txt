@@ -92,7 +92,6 @@ appdynamics-proxysupport-linux-x64
 Argh
 arize
 asynctest
-augmented
 autiobooksqta
 autoai-libs
 autogen
@@ -279,11 +278,7 @@ Flask-Mail
 Flask-Mailman
 flask-marshmallow
 flask-mongoengine
-flask-oauthlib
 flask-oidc
-Flask-Pydantic
-Flask-PyMongo
-flask-restful
 flask-restplus
 flask-restx
 flask-smorest
