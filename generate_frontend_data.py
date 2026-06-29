@@ -46,20 +46,18 @@ def parse_cleared_bounties(filepath):
                 if not line or line.startswith('#'):
                     continue
 
-                # Format: YYYY-MM-DD HH:MM:SS - [PRIORITY] package_name
-                parts = line.split(' - ', 1)
-                if len(parts) == 2:
-                    timestamp = parts[0]
-                    rest = parts[1]
+                # Format: YYYY-MM-DD HH:MM:SS | package-name | Position: N | Priority: LEVEL
+                parts = line.split(' | ')
+                if len(parts) >= 2:
+                    timestamp = parts[0].strip()
+                    package = parts[1].strip()
 
-                    # Extract priority and package
-                    if rest.startswith('['):
-                        priority_end = rest.index(']')
-                        priority = rest[1:priority_end]
-                        package = rest[priority_end+2:].strip()
-                    else:
-                        priority = "UNKNOWN"
-                        package = rest
+                    # Extract priority if available
+                    priority = "UNKNOWN"
+                    if len(parts) >= 4:
+                        priority_part = parts[3].strip()
+                        if priority_part.startswith('Priority:'):
+                            priority = priority_part.replace('Priority:', '').strip()
 
                     cleared.append({
                         "timestamp": timestamp,
