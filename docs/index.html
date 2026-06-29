@@ -47,6 +47,17 @@
             opacity: 0.9;
         }
 
+        .header-link {
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
+
+        .header-link:hover {
+            opacity: 0.8;
+            text-decoration: none;
+        }
+
         .stats {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -340,13 +351,13 @@
 <body>
     <div class="container">
         <header>
-            <h1>Bounty Board</h1>
-            <p>Package Security Review Priorities</p>
+            <h1><a href="https://calungaproject.github.io/bounty-board" class="header-link">Bounty Board</a></h1>
+            <p>RHTL Python Package Priorities</p>
         </header>
 
         <div class="stats">
             <div class="stat-card">
-                <div class="number">780</div>
+                <div class="number">768</div>
                 <div class="label">Active Bounties</div>
             </div>
             <div class="stat-card">
@@ -358,7 +369,7 @@
                 <div class="label">Medium Priority</div>
             </div>
             <div class="stat-card">
-                <div class="number">20</div>
+                <div class="number">32</div>
                 <div class="label"><a href="#cleared-bounties">Cleared</a></div>
             </div>
         </div>
@@ -581,18 +592,6 @@
             </div>
         
 
-            <div class="bounty-item" data-priority="HIGH" data-package="arpy">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        arpy
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/arpy" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for arpy">[PR]</a>
-                    </div>
-                    <div class="package-category">High priority - multiple sources</div>
-                </div>
-                <div class="priority-badge priority-HIGH">HIGH</div>
-            </div>
-        
-
             <div class="bounty-item" data-priority="HIGH" data-package="banks">
                 <div class="bounty-info">
                     <div class="package-name">
@@ -665,15 +664,15 @@
             </div>
         
 
-            <div class="bounty-item" data-priority="MEDIUM" data-package="fickling">
+            <div class="bounty-item" data-priority="HIGH" data-package="fickling">
                 <div class="bounty-info">
                     <div class="package-name">
                         fickling
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/fickling" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for fickling">[PR]</a>
                     </div>
-                    <div class="package-category">Medium priority</div>
+                    <div class="package-category">High priority - multiple sources</div>
                 </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
+                <div class="priority-badge priority-HIGH">HIGH</div>
             </div>
         
 
@@ -749,59 +748,11 @@
             </div>
         
 
-            <div class="bounty-item" data-priority="MEDIUM" data-package="langchain-aws">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        langchain-aws
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/langchain-aws" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for langchain-aws">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
             <div class="bounty-item" data-priority="MEDIUM" data-package="langchain-community">
                 <div class="bounty-info">
                     <div class="package-name">
                         langchain-community
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/langchain-community" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for langchain-community">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="langchain-milvus">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        langchain-milvus
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/langchain-milvus" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for langchain-milvus">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="langchain-nvidia-ai-endpoints">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        langchain-nvidia-ai-endpoints
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/langchain-nvidia-ai-endpoints" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for langchain-nvidia-ai-endpoints">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="llama-cloud">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        llama-cloud
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/llama-cloud" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for llama-cloud">[PR]</a>
                     </div>
                     <div class="package-category">Medium priority</div>
                 </div>
@@ -1121,59 +1072,11 @@
             </div>
         
 
-            <div class="bounty-item" data-priority="MEDIUM" data-package="pgpy13">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        pgpy13
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/pgpy13" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for pgpy13">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
             <div class="bounty-item" data-priority="MEDIUM" data-package="polyfile-weave">
                 <div class="bounty-info">
                     <div class="package-name">
                         polyfile-weave
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/polyfile-weave" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for polyfile-weave">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="prefixspan">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        prefixspan
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/prefixspan" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for prefixspan">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="pydpkg">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        pydpkg
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/pydpkg" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for pydpkg">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="pymilvus">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        pymilvus
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/pymilvus" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for pymilvus">[PR]</a>
                     </div>
                     <div class="package-category">Medium priority</div>
                 </div>
@@ -1270,42 +1173,6 @@
                     <div class="package-name">
                         stdlib-list
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/stdlib-list" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for stdlib-list">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="striprtf">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        striprtf
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/striprtf" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for striprtf">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="tantivy">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        tantivy
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/tantivy" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for tantivy">[PR]</a>
-                    </div>
-                    <div class="package-category">Medium priority</div>
-                </div>
-                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
-            </div>
-        
-
-            <div class="bounty-item" data-priority="MEDIUM" data-package="univers">
-                <div class="bounty-info">
-                    <div class="package-name">
-                        univers
-                        <a href="https://github.com/calungaproject/index/pulls?q=onboard/univers" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for univers">[PR]</a>
                     </div>
                     <div class="package-category">Medium priority</div>
                 </div>
@@ -1565,147 +1432,147 @@
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="alchemy-mock">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="alchemy-mock">
                 <div class="bounty-info">
                     <div class="package-name">
                         alchemy-mock
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/alchemy-mock" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for alchemy-mock">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="allpairspy">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="allpairspy">
                 <div class="bounty-info">
                     <div class="package-name">
                         allpairspy
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/allpairspy" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for allpairspy">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="allure-pytest">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="allure-pytest">
                 <div class="bounty-info">
                     <div class="package-name">
                         allure-pytest
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/allure-pytest" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for allure-pytest">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="allure-python-commons">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="allure-python-commons">
                 <div class="bounty-info">
                     <div class="package-name">
                         allure-python-commons
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/allure-python-commons" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for allure-python-commons">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="altgraph">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="altgraph">
                 <div class="bounty-info">
                     <div class="package-name">
                         altgraph
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/altgraph" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for altgraph">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="andisdk">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="andisdk">
                 <div class="bounty-info">
                     <div class="package-name">
                         andisdk
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/andisdk" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for andisdk">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="antiorm">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="antiorm">
                 <div class="bounty-info">
                     <div class="package-name">
                         antiorm
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/antiorm" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for antiorm">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="apache-airflow-providers-common-sql">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="apache-airflow-providers-common-sql">
                 <div class="bounty-info">
                     <div class="package-name">
                         apache-airflow-providers-common-sql
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/apache-airflow-providers-common-sql" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for apache-airflow-providers-common-sql">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="apache-airflow-providers-ftp">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="apache-airflow-providers-ftp">
                 <div class="bounty-info">
                     <div class="package-name">
                         apache-airflow-providers-ftp
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/apache-airflow-providers-ftp" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for apache-airflow-providers-ftp">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="apache-airflow-providers-http">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="apache-airflow-providers-http">
                 <div class="bounty-info">
                     <div class="package-name">
                         apache-airflow-providers-http
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/apache-airflow-providers-http" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for apache-airflow-providers-http">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="apache-airflow-providers-imap">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="apache-airflow-providers-imap">
                 <div class="bounty-info">
                     <div class="package-name">
                         apache-airflow-providers-imap
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/apache-airflow-providers-imap" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for apache-airflow-providers-imap">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
-            <div class="bounty-item" data-priority="LOW" data-package="apache-airflow-providers-microsoft-mssql">
+            <div class="bounty-item" data-priority="MEDIUM" data-package="apache-airflow-providers-microsoft-mssql">
                 <div class="bounty-info">
                     <div class="package-name">
                         apache-airflow-providers-microsoft-mssql
                         <a href="https://github.com/calungaproject/index/pulls?q=onboard/apache-airflow-providers-microsoft-mssql" class="pr-link" target="_blank" rel="noopener noreferrer" title="Search for PRs for apache-airflow-providers-microsoft-mssql">[PR]</a>
                     </div>
-                    <div class="package-category">Lower priority</div>
+                    <div class="package-category">Medium priority</div>
                 </div>
-                <div class="priority-badge priority-LOW">LOW</div>
+                <div class="priority-badge priority-MEDIUM">MEDIUM</div>
             </div>
         
 
@@ -9745,28 +9612,28 @@
             <div class="cleared-list">
                 
             <div class="cleared-item">
-                <span class="cleared-package">strawberry-graphql</span>
-                <span class="cleared-date">2026-06-29 15:43:09</span>
+                <span class="cleared-package">arpy</span>
+                <span class="cleared-date">2026-06-29 17:09:34</span>
             </div>
         
             <div class="cleared-item">
-                <span class="cleared-package">url-normalize</span>
-                <span class="cleared-date">2026-06-29 15:43:09</span>
+                <span class="cleared-package">langchain-milvus</span>
+                <span class="cleared-date">2026-06-29 17:09:34</span>
             </div>
         
             <div class="cleared-item">
-                <span class="cleared-package">abnf</span>
-                <span class="cleared-date">2026-06-29 15:43:09</span>
+                <span class="cleared-package">langchain-nvidia-ai-endpoints</span>
+                <span class="cleared-date">2026-06-29 17:09:34</span>
             </div>
         
             <div class="cleared-item">
-                <span class="cleared-package">cvss</span>
-                <span class="cleared-date">2026-06-29 15:43:09</span>
+                <span class="cleared-package">pgpy13</span>
+                <span class="cleared-date">2026-06-29 17:09:34</span>
             </div>
         
             <div class="cleared-item">
-                <span class="cleared-package">esprima</span>
-                <span class="cleared-date">2026-06-29 15:43:09</span>
+                <span class="cleared-package">prefixspan</span>
+                <span class="cleared-date">2026-06-29 17:09:34</span>
             </div>
         
             </div>
@@ -9774,7 +9641,7 @@
     
 
         <footer>
-            <p>Last updated: 2026-06-29 11:51:51 UTC</p>
+            <p>Last updated: 2026-06-29 13:21:20 UTC</p>
             <p>Automated updates via GitHub Actions</p>
             <a href="#" class="back-to-top">↑ Back to Top</a>
         </footer>

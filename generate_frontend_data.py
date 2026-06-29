@@ -206,6 +206,17 @@ def generate_html(bounties, cleared, stats):
             opacity: 0.9;
         }}
 
+        .header-link {{
+            color: white;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }}
+
+        .header-link:hover {{
+            opacity: 0.8;
+            text-decoration: none;
+        }}
+
         .stats {{
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -499,8 +510,8 @@ def generate_html(bounties, cleared, stats):
 <body>
     <div class="container">
         <header>
-            <h1>Bounty Board</h1>
-            <p>Package Security Review Priorities</p>
+            <h1><a href="https://calungaproject.github.io/bounty-board" class="header-link">Bounty Board</a></h1>
+            <p>RHTL Python Package Priorities</p>
         </header>
 
         <div class="stats">
