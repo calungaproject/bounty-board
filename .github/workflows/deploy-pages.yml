@@ -1,12 +1,6 @@
 name: Deploy GitHub Pages
 
 on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'bounty-board.txt'
-      - 'cleared-bounties.log'
   workflow_run:
     workflows: ["Update Bounty Board"]
     types:
