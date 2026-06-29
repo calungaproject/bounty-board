@@ -7,7 +7,7 @@ This directory contains the prioritized bounty board for package security review
 ## Files
 
 ### Active Lists
-- **`bounty-board.txt`** - Master bounty list (1,721 packages)
+- **`bounty-board.txt`** - Master bounty list (792 packages)
   - Lines 1-24: HIGH PRIORITY (from multiple priority sources)
   - Lines 25-99: MEDIUM PRIORITY (secondary priority)
   - Lines 100+: LOWER PRIORITY (remaining packages)
@@ -16,7 +16,6 @@ This directory contains the prioritized bounty board for package security review
 - **`datasets/`** - Directory containing source package lists
   - `dataset_00.txt` - 727 packages
   - `dataset_01.txt` - 99 packages
-  - `dataset_02.txt` - 1,000 packages
   - Merged automatically via `update_bounty_board.py`
 
 ### Documentation
@@ -62,7 +61,7 @@ This will:
 
 ## Statistics (Current)
 
-- **Active Bounties:** 1,721 packages
+- **Active Bounties:** 792 packages
 - **Cleared (all time):** 8 packages
 - **Last cleared:** 2026-06-29
   - matplotlib-inline
@@ -168,7 +167,7 @@ Builds and deploys the frontend dashboard:
 
 The live dashboard displays:
 - Current bounty statistics (pre-rendered)
-- Complete bounty list (all 1,721 packages)
+- Complete bounty list (all 792 packages)
 - Recently cleared packages
 - Priority breakdown
 - Last update timestamp
