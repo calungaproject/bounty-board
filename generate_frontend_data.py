@@ -628,6 +628,9 @@ def main():
     html_content = generate_html(bounties, cleared, stats)
 
     output_file = base_dir / "docs" / "index.html"
+    # Create docs directory if it doesn't exist
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+
     with open(output_file, 'w') as f:
         f.write(html_content)
 
