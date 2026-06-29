@@ -49,10 +49,3 @@ jobs:
             git commit -m "chore: update bounty board - $(date +'%Y-%m-%d')"
             git push
           fi
-
-      - name: Upload cleared bounties log
-        uses: actions/upload-artifact@v4
-        with:
-          name: cleared-bounties-log
-          path: cleared-bounties.log
-          retention-days: 90
