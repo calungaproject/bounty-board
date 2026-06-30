@@ -362,7 +362,6 @@ opentelemetry-instrumentation-chromadb
 opentelemetry-instrumentation-click
 opentelemetry-instrumentation-confluent-kafka
 opentelemetry-instrumentation-google-genai
-opentelemetry-instrumentation-httpx
 opentelemetry-instrumentation-kafka-python
 opentelemetry-instrumentation-langchain
 opentelemetry-instrumentation-llamaindex
