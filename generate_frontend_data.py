@@ -5,9 +5,41 @@ from datetime import datetime
 from pathlib import Path
 from urllib.parse import quote
 import html
+import json
 
 
-def parse_bounty_board(filepath):
+def normalize_package_name(name):
+    """Normalize package name for comparison"""
+    return name.lower().replace('_', '-').replace('.', '-').strip()
+
+
+def load_pr_data(filepath):
+    """Load PR data from JSON file."""
+    try:
+        with open(filepath, 'r') as f:
+            return json.load(f)
+    except (FileNotFoundError, json.JSONDecodeError):
+        return {}
+
+
+def get_pr_link(package_name, pr_data):
+    """Get the PR link for a package from the PR data."""
+    # Try exact match first
+    if package_name in pr_data:
+        prs = pr_data[package_name]
+        if prs and len(prs) > 0:
+            return prs[0].get('link')
+
+    # Try normalized matching
+    normalized_pkg = normalize_package_name(package_name)
+    for pkg_key, prs in pr_data.items():
+        if normalize_package_name(pkg_key) == normalized_pkg and prs and len(prs) > 0:
+            return prs[0].get('link')
+
+    return None
+
+
+def parse_bounty_board(filepath, pr_data):
     """Parse bounty-board.txt into structured data."""
     bounties = []
     with open(filepath, 'r') as f:
@@ -27,11 +59,15 @@ def parse_bounty_board(filepath):
                 priority = "LOW"
                 category = "Lower priority"
 
+            # Get PR link from data
+            pr_link = get_pr_link(package, pr_data)
+
             bounties.append({
                 "id": idx,
                 "package": package,
                 "priority": priority,
-                "category": category
+                "category": category,
+                "pr_link": pr_link
             })
 
     return bounties
@@ -47,7 +83,7 @@ def parse_cleared_bounties(filepath):
                 if not line or line.startswith('#'):
                     continue
 
-                # Format: YYYY-MM-DD HH:MM:SS | package-name | Position: N | Priority: LEVEL
+                # Format: YYYY-MM-DD HH:MM:SS | package-name | Position: N | Priority: LEVEL | PR: URL
                 parts = line.split(' | ')
                 if len(parts) >= 2:
                     timestamp = parts[0].strip()
@@ -60,10 +96,20 @@ def parse_cleared_bounties(filepath):
                         if priority_part.startswith('Priority:'):
                             priority = priority_part.replace('Priority:', '').strip()
 
+                    # Extract PR link if available
+                    pr_link = None
+                    if len(parts) >= 5:
+                        pr_part = parts[4].strip()
+                        if pr_part.startswith('PR:'):
+                            pr_url = pr_part.replace('PR:', '').strip()
+                            if pr_url != 'N/A':
+                                pr_link = pr_url
+
                     cleared.append({
                         "timestamp": timestamp,
                         "priority": priority,
-                        "package": package
+                        "package": package,
+                        "pr_link": pr_link
                     })
     except FileNotFoundError:
         pass
@@ -98,10 +144,16 @@ def generate_bounty_html(bounties):
         category = html.escape(bounty["category"])
         priority = bounty["priority"]
 
-        # Generate PR search URL (PRs are named onboard/<package-name>)
-        pr_search = f"onboard/{bounty['package']}"
-        pr_url = f"https://github.com/calungaproject/index/pulls?q={quote(pr_search)}"
-        pr_title = f"Search for PRs for {package}"
+        # Use actual PR link if available, otherwise generate search URL
+        pr_link = bounty.get("pr_link")
+        if pr_link:
+            pr_url = pr_link
+            pr_title = f"View PR for {package}"
+        else:
+            # Fallback to search URL
+            pr_search = f"onboard/{bounty['package']}"
+            pr_url = f"https://github.com/calungaproject/index/pulls?q={quote(pr_search)}"
+            pr_title = f"Search for PRs for {package}"
 
         html_parts.append(f'''
             <div class="bounty-item" data-priority="{priority}" data-package="{package.lower()}">
@@ -131,10 +183,17 @@ def generate_cleared_html(cleared):
     for item in recent:
         package = html.escape(item["package"])
         timestamp = html.escape(item["timestamp"])
+        pr_link = item.get("pr_link")
+
+        # Add PR link if available
+        if pr_link:
+            package_html = f'<a href="{pr_link}" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: none;">{package}</a>'
+        else:
+            package_html = package
 
         html_parts.append(f'''
             <div class="cleared-item">
-                <span class="cleared-package">{package}</span>
+                <span class="cleared-package">{package_html}</span>
                 <span class="cleared-date">{timestamp}</span>
             </div>
         ''')
@@ -621,9 +680,17 @@ def main():
     """Generate the static HTML site."""
     base_dir = Path(__file__).parent
 
-    bounties = parse_bounty_board(base_dir / "bounty-board.txt")
+    # Load PR data
+    pr_data = load_pr_data(base_dir / "calunga-index-prs.json")
+    print(f"Loaded PR data for {len(pr_data)} packages")
+
+    bounties = parse_bounty_board(base_dir / "bounty-board.txt", pr_data)
     cleared = parse_cleared_bounties(base_dir / "cleared-bounties.log")
     stats = get_statistics(bounties, cleared)
+
+    # Count how many bounties have PR links
+    bounties_with_prs = sum(1 for b in bounties if b.get('pr_link'))
+    print(f"Active bounties with PR links: {bounties_with_prs}/{len(bounties)}")
 
     html_content = generate_html(bounties, cleared, stats)
 

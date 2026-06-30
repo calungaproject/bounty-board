@@ -1,262 +1,302 @@
 # Cleared Bounties Log
 # Packages that were found in Red Hat trusted libraries and removed from bounty board
-# Format: YYYY-MM-DD HH:MM:SS | package-name
+# Format: YYYY-MM-DD HH:MM:SS | package-name | position | priority | PR link
 
 # Cleared on 2026-06-26 14:41:05
-2026-06-26 14:41:05 | langchain | Position: 46 | Priority: MEDIUM (exploit interest)
-2026-06-26 14:41:05 | langgraph | Position: 51 | Priority: MEDIUM (exploit interest)
-2026-06-26 14:41:05 | openinference-instrumentation | Position: 69 | Priority: MEDIUM (exploit interest)
-2026-06-26 14:41:05 | openinference-semantic-conventions | Position: 80 | Priority: MEDIUM (exploit interest)
+2026-06-26 14:41:05 | langchain | Position: 46 | Priority: MEDIUM (exploit interest) | PR: https://github.com/calungaproject/index/pull/1621
+2026-06-26 14:41:05 | langgraph | Position: 51 | Priority: MEDIUM (exploit interest) | PR: https://github.com/calungaproject/index/pull/1912
+2026-06-26 14:41:05 | openinference-instrumentation | Position: 69 | Priority: MEDIUM (exploit interest) | PR: N/A
+2026-06-26 14:41:05 | openinference-semantic-conventions | Position: 80 | Priority: MEDIUM (exploit interest) | PR: N/A
 
 # Cleared on 2026-06-29 08:22:07
-2026-06-29 08:22:07 | matplotlib-inline | Position: 10 | Priority: HIGH (both lists)
-2026-06-29 08:22:07 | appdirs | Position: 27 | Priority: MEDIUM (exploit interest)
-2026-06-29 08:22:07 | ipython | Position: 45 | Priority: MEDIUM (exploit interest)
-2026-06-29 08:22:07 | PyPika | Position: 616 | Priority: LOW (lightwell priority)
+2026-06-29 08:22:07 | matplotlib-inline | Position: 10 | Priority: HIGH (both lists) | PR: https://github.com/calungaproject/index/pull/1467
+2026-06-29 08:22:07 | appdirs | Position: 27 | Priority: MEDIUM (exploit interest) | PR: https://github.com/calungaproject/index/pull/2224
+2026-06-29 08:22:07 | ipython | Position: 45 | Priority: MEDIUM (exploit interest) | PR: https://github.com/calungaproject/index/pull/1454
+2026-06-29 08:22:07 | PyPika | Position: 616 | Priority: LOW (lightwell priority) | PR: https://github.com/calungaproject/index/pull/2575
 
 # Cleared on 2026-06-29 10:55:08
-2026-06-29 10:55:08 | language-data | Position: 7 | Priority: HIGH (top priority)
-2026-06-29 10:55:08 | marisa-trie | Position: 9 | Priority: HIGH (top priority)
-2026-06-29 10:55:08 | pkce | Position: 14 | Priority: HIGH (top priority)
-2026-06-29 10:55:08 | pystache | Position: 16 | Priority: HIGH (top priority)
-2026-06-29 10:55:08 | requests-futures | Position: 17 | Priority: HIGH (top priority)
-2026-06-29 10:55:08 | cross-web | Position: 209 | Priority: LOW (lower priority)
+2026-06-29 10:55:08 | language-data | Position: 7 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4188
+2026-06-29 10:55:08 | marisa-trie | Position: 9 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4189
+2026-06-29 10:55:08 | pkce | Position: 14 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4194
+2026-06-29 10:55:08 | pystache | Position: 16 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4195
+2026-06-29 10:55:08 | requests-futures | Position: 17 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4196
+2026-06-29 10:55:08 | cross-web | Position: 209 | Priority: LOW (lower priority) | PR: N/A
 
 # Cleared on 2026-06-29 15:43:09
-2026-06-29 15:43:09 | strawberry-graphql | Position: 15 | Priority: HIGH (top priority)
-2026-06-29 15:43:09 | url-normalize | Position: 18 | Priority: HIGH (top priority)
-2026-06-29 15:43:09 | abnf | Position: 19 | Priority: HIGH (top priority)
-2026-06-29 15:43:09 | cvss | Position: 25 | Priority: MEDIUM (secondary priority)
-2026-06-29 15:43:09 | esprima | Position: 28 | Priority: MEDIUM (secondary priority)
-2026-06-29 15:43:09 | extratools | Position: 29 | Priority: MEDIUM (secondary priority)
+2026-06-29 15:43:09 | strawberry-graphql | Position: 15 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4198
+2026-06-29 15:43:09 | url-normalize | Position: 18 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4199
+2026-06-29 15:43:09 | abnf | Position: 19 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4200
+2026-06-29 15:43:09 | cvss | Position: 25 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4206
+2026-06-29 15:43:09 | esprima | Position: 28 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4208
+2026-06-29 15:43:09 | extratools | Position: 29 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4209
 
 # Cleared on 2026-06-29 16:28:28
-2026-06-29 16:28:28 | langchain-aws | Position: 32 | Priority: MEDIUM (secondary priority)
-2026-06-29 16:28:28 | llama-cloud | Position: 36 | Priority: MEDIUM (secondary priority)
+2026-06-29 16:28:28 | langchain-aws | Position: 32 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4215
+2026-06-29 16:28:28 | llama-cloud | Position: 36 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4218
 
 # Cleared on 2026-06-29 17:09:34
-2026-06-29 17:09:34 | arpy | Position: 18 | Priority: HIGH (top priority)
-2026-06-29 17:09:34 | langchain-milvus | Position: 33 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | langchain-nvidia-ai-endpoints | Position: 34 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | pgpy13 | Position: 61 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | prefixspan | Position: 63 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | pydpkg | Position: 64 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | pymilvus | Position: 65 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | striprtf | Position: 74 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | tantivy | Position: 75 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:09:34 | univers | Position: 76 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:09:34 | arpy | Position: 18 | Priority: HIGH (top priority) | PR: N/A
+2026-06-29 17:09:34 | langchain-milvus | Position: 33 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4216
+2026-06-29 17:09:34 | langchain-nvidia-ai-endpoints | Position: 34 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4217
+2026-06-29 17:09:34 | pgpy13 | Position: 61 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4242
+2026-06-29 17:09:34 | prefixspan | Position: 63 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4244
+2026-06-29 17:09:34 | pydpkg | Position: 64 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4245
+2026-06-29 17:09:34 | pymilvus | Position: 65 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1858
+2026-06-29 17:09:34 | striprtf | Position: 74 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4251
+2026-06-29 17:09:34 | tantivy | Position: 75 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4252
+2026-06-29 17:09:34 | univers | Position: 76 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4253
 
 # Cleared on 2026-06-29 17:15:55
-2026-06-29 17:15:55 | absolufy-imports | Position: 72 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:15:55 | absolufy-imports | Position: 72 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4258
 
 # Cleared on 2026-06-29 17:58:39
-2026-06-29 17:58:39 | wikipedia | Position: 69 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | a2a-sdk | Position: 70 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | a2wsgi | Position: 71 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | acceldata-sdk | Position: 72 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | accessible-pygments | Position: 73 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | adbc-driver-manager | Position: 75 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | agt-lab-server | Position: 77 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | aiokafka | Position: 80 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | airflow-code-editor | Position: 86 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | alchemy-mock | Position: 87 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | allpairspy | Position: 88 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | allure-pytest | Position: 89 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | allure-python-commons | Position: 90 | Priority: MEDIUM (secondary priority)
-2026-06-29 17:58:39 | altgraph | Position: 91 | Priority: MEDIUM (secondary priority)
+2026-06-29 17:58:39 | wikipedia | Position: 69 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4255
+2026-06-29 17:58:39 | a2a-sdk | Position: 70 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4256
+2026-06-29 17:58:39 | a2wsgi | Position: 71 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4257
+2026-06-29 17:58:39 | acceldata-sdk | Position: 72 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4259
+2026-06-29 17:58:39 | accessible-pygments | Position: 73 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4260
+2026-06-29 17:58:39 | adbc-driver-manager | Position: 75 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4262
+2026-06-29 17:58:39 | agt-lab-server | Position: 77 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4264
+2026-06-29 17:58:39 | aiokafka | Position: 80 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4267
+2026-06-29 17:58:39 | airflow-code-editor | Position: 86 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4273
+2026-06-29 17:58:39 | alchemy-mock | Position: 87 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4274
+2026-06-29 17:58:39 | allpairspy | Position: 88 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4275
+2026-06-29 17:58:39 | allure-pytest | Position: 89 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4276
+2026-06-29 17:58:39 | allure-python-commons | Position: 90 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4277
+2026-06-29 17:58:39 | altgraph | Position: 91 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4278
 
 # Cleared on 2026-06-29 18:53:22
-2026-06-29 18:53:22 | antiorm | Position: 79 | Priority: MEDIUM (secondary priority)
-2026-06-29 18:53:22 | approval-utilities | Position: 93 | Priority: MEDIUM (secondary priority)
-2026-06-29 18:53:22 | approvaltests | Position: 94 | Priority: MEDIUM (secondary priority)
-2026-06-29 18:53:22 | arabic-reshaper | Position: 95 | Priority: MEDIUM (secondary priority)
-2026-06-29 18:53:22 | archeanvision-api | Position: 96 | Priority: MEDIUM (secondary priority)
-2026-06-29 18:53:22 | argopt | Position: 98 | Priority: MEDIUM (secondary priority)
-2026-06-29 18:53:22 | arize-otel | Position: 100 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | arize-phoenix-client | Position: 101 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | armory9 | Position: 102 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | arq | Position: 103 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | artemis | Position: 104 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | asgi-correlation-id | Position: 105 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | asyncache | Position: 106 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | asyncer | Position: 107 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | asyncio-throttle | Position: 108 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | asyncstdlib | Position: 109 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | atomicwrites | Position: 111 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | autobahn | Position: 115 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | empty-files | Position: 276 | Priority: LOW (lower priority)
-2026-06-29 18:53:22 | txaio | Position: 724 | Priority: LOW (lower priority)
+2026-06-29 18:53:22 | antiorm | Position: 79 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4280
+2026-06-29 18:53:22 | approval-utilities | Position: 93 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4287
+2026-06-29 18:53:22 | approvaltests | Position: 94 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4288
+2026-06-29 18:53:22 | arabic-reshaper | Position: 95 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4289
+2026-06-29 18:53:22 | archeanvision-api | Position: 96 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4290
+2026-06-29 18:53:22 | argopt | Position: 98 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4292
+2026-06-29 18:53:22 | arize-otel | Position: 100 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4294
+2026-06-29 18:53:22 | arize-phoenix-client | Position: 101 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4295
+2026-06-29 18:53:22 | armory9 | Position: 102 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4296
+2026-06-29 18:53:22 | arq | Position: 103 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4297
+2026-06-29 18:53:22 | artemis | Position: 104 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4298
+2026-06-29 18:53:22 | asgi-correlation-id | Position: 105 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4299
+2026-06-29 18:53:22 | asyncache | Position: 106 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4300
+2026-06-29 18:53:22 | asyncer | Position: 107 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4301
+2026-06-29 18:53:22 | asyncio-throttle | Position: 108 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4302
+2026-06-29 18:53:22 | asyncstdlib | Position: 109 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4303
+2026-06-29 18:53:22 | atomicwrites | Position: 111 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4304
+2026-06-29 18:53:22 | autobahn | Position: 115 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4308
+2026-06-29 18:53:22 | empty-files | Position: 276 | Priority: LOW (lower priority) | PR: N/A
+2026-06-29 18:53:22 | txaio | Position: 724 | Priority: LOW (lower priority) | PR: N/A
 
 # Cleared on 2026-06-29 19:07:39
-2026-06-29 19:07:39 | augmented | Position: 95 | Priority: MEDIUM (secondary priority)
-2026-06-29 19:07:39 | flask-oauthlib | Position: 282 | Priority: LOW (lower priority)
-2026-06-29 19:07:39 | Flask-Pydantic | Position: 284 | Priority: LOW (lower priority)
-2026-06-29 19:07:39 | Flask-PyMongo | Position: 285 | Priority: LOW (lower priority)
-2026-06-29 19:07:39 | flask-restful | Position: 286 | Priority: LOW (lower priority)
+2026-06-29 19:07:39 | augmented | Position: 95 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4305
+2026-06-29 19:07:39 | flask-oauthlib | Position: 282 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4314
+2026-06-29 19:07:39 | Flask-Pydantic | Position: 284 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4316
+2026-06-29 19:07:39 | Flask-PyMongo | Position: 285 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4317
+2026-06-29 19:07:39 | flask-restful | Position: 286 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4318
 
 # Cleared on 2026-06-29 19:21:23
-2026-06-29 19:21:23 | flask-oidc | Position: 281 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | flask-restx | Position: 283 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | flask-smorest | Position: 284 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | flask-swagger-ui | Position: 286 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | flask-wikimediaui | Position: 288 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | fortune-python | Position: 292 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | fpdf2 | Position: 293 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | furl | Position: 296 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | orderedmultidict | Position: 468 | Priority: LOW (lower priority)
-2026-06-29 19:21:23 | webargs | Position: 720 | Priority: LOW (lower priority)
+2026-06-29 19:21:23 | flask-oidc | Position: 281 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4315
+2026-06-29 19:21:23 | flask-restx | Position: 283 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4320
+2026-06-29 19:21:23 | flask-smorest | Position: 284 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4321
+2026-06-29 19:21:23 | flask-swagger-ui | Position: 286 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4323
+2026-06-29 19:21:23 | flask-wikimediaui | Position: 288 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4325
+2026-06-29 19:21:23 | fortune-python | Position: 292 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4329
+2026-06-29 19:21:23 | fpdf2 | Position: 293 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4330
+2026-06-29 19:21:23 | furl | Position: 296 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4332
+2026-06-29 19:21:23 | orderedmultidict | Position: 468 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4484
+2026-06-29 19:21:23 | webargs | Position: 720 | Priority: LOW (lower priority) | PR: N/A
 
 # Cleared on 2026-06-29 19:30:57
-2026-06-29 19:30:57 | gdrive-core | Position: 290 | Priority: LOW (lower priority)
-2026-06-29 19:30:57 | git-fame | Position: 292 | Priority: LOW (lower priority)
-2026-06-29 19:30:57 | google | Position: 293 | Priority: LOW (lower priority)
-2026-06-29 19:30:57 | google-apitools | Position: 295 | Priority: LOW (lower priority)
+2026-06-29 19:30:57 | gdrive-core | Position: 290 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4334
+2026-06-29 19:30:57 | git-fame | Position: 292 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4336
+2026-06-29 19:30:57 | google | Position: 293 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4337
+2026-06-29 19:30:57 | google-apitools | Position: 295 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4339
 
 # Cleared on 2026-06-29 19:58:59
-2026-06-29 19:58:59 | google-cloud-discoveryengine | Position: 295 | Priority: LOW (lower priority)
-2026-06-29 19:58:59 | gym | Position: 305 | Priority: LOW (lower priority)
-2026-06-29 19:58:59 | gym-notices | Position: 306 | Priority: LOW (lower priority)
-2026-06-29 19:58:59 | http-exceptions | Position: 310 | Priority: LOW (lower priority)
+2026-06-29 19:58:59 | google-cloud-discoveryengine | Position: 295 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4342
+2026-06-29 19:58:59 | gym | Position: 305 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4348
+2026-06-29 19:58:59 | gym-notices | Position: 306 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4349
+2026-06-29 19:58:59 | http-exceptions | Position: 310 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4352
 
 # Cleared on 2026-06-29 20:46:39
-2026-06-29 20:46:39 | google-cloud-os-config | Position: 297 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | google-cloud-recommendations-ai | Position: 299 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | greenery | Position: 303 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | hdfs | Position: 305 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | httpx-auth | Position: 307 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | httpx-ntlm | Position: 308 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | httpx-retries | Position: 309 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | Hypercorn | Position: 310 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | ibis-framework | Position: 312 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | imagekitio | Position: 314 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | immutables | Position: 315 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | Indrajeet | Position: 318 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | josepy | Position: 326 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | js.jqgrid | Position: 329 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | js.jquery | Position: 330 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | json-flatten | Position: 333 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | json-schema-to-pydantic | Position: 335 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | jsonsubschema | Position: 338 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | kafka-python-ng | Position: 341 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | laces | Position: 346 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | portion | Position: 485 | Priority: LOW (lower priority)
-2026-06-29 20:46:39 | priority | Position: 491 | Priority: LOW (lower priority)
+2026-06-29 20:46:39 | google-cloud-os-config | Position: 297 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4345
+2026-06-29 20:46:39 | google-cloud-recommendations-ai | Position: 299 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4347
+2026-06-29 20:46:39 | greenery | Position: 303 | Priority: LOW (lower priority) | PR: N/A
+2026-06-29 20:46:39 | hdfs | Position: 305 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4350
+2026-06-29 20:46:39 | httpx-auth | Position: 307 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4353
+2026-06-29 20:46:39 | httpx-ntlm | Position: 308 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4354
+2026-06-29 20:46:39 | httpx-retries | Position: 309 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4355
+2026-06-29 20:46:39 | Hypercorn | Position: 310 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4356
+2026-06-29 20:46:39 | ibis-framework | Position: 312 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4358
+2026-06-29 20:46:39 | imagekitio | Position: 314 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4360
+2026-06-29 20:46:39 | immutables | Position: 315 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4361
+2026-06-29 20:46:39 | Indrajeet | Position: 318 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4364
+2026-06-29 20:46:39 | josepy | Position: 326 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4370
+2026-06-29 20:46:39 | js.jqgrid | Position: 329 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4372
+2026-06-29 20:46:39 | js.jquery | Position: 330 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4373
+2026-06-29 20:46:39 | json-flatten | Position: 333 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4376
+2026-06-29 20:46:39 | json-schema-to-pydantic | Position: 335 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4378
+2026-06-29 20:46:39 | jsonsubschema | Position: 338 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4381
+2026-06-29 20:46:39 | kafka-python-ng | Position: 341 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4382
+2026-06-29 20:46:39 | laces | Position: 346 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4386
+2026-06-29 20:46:39 | portion | Position: 485 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4515
+2026-06-29 20:46:39 | priority | Position: 491 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4521
 
 # Cleared on 2026-06-29 21:41:36
-2026-06-29 21:41:36 | cobble | Position: 141 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | langchain-mcp-adapters | Position: 329 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | langgraph-checkpoint-mongodb | Position: 331 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | launchable | Position: 333 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | lazy-model | Position: 336 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | lia-web | Position: 338 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | litellm-enterprise | Position: 341 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | load-dotenv | Position: 346 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | logging-utilities | Position: 347 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | macholib | Position: 348 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mafw | Position: 349 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mammoth | Position: 350 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | memory-profiler | Position: 353 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mkdocs-bootstrap | Position: 354 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mkdocs-windmillex | Position: 355 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mo-dots | Position: 357 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mo-future | Position: 358 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mo-imports | Position: 359 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mo-parsing | Position: 360 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | mo-sql-parsing | Position: 361 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | pyfiglet | Position: 488 | Priority: LOW (lower priority)
-2026-06-29 21:41:36 | pymongo-search-utils | Position: 505 | Priority: LOW (lower priority)
+2026-06-29 21:41:36 | cobble | Position: 141 | Priority: LOW (lower priority) | PR: N/A
+2026-06-29 21:41:36 | langchain-mcp-adapters | Position: 329 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4388
+2026-06-29 21:41:36 | langgraph-checkpoint-mongodb | Position: 331 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4390
+2026-06-29 21:41:36 | launchable | Position: 333 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4392
+2026-06-29 21:41:36 | lazy-model | Position: 336 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4395
+2026-06-29 21:41:36 | lia-web | Position: 338 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4397
+2026-06-29 21:41:36 | litellm-enterprise | Position: 341 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4400
+2026-06-29 21:41:36 | load-dotenv | Position: 346 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4404
+2026-06-29 21:41:36 | logging-utilities | Position: 347 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4405
+2026-06-29 21:41:36 | macholib | Position: 348 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4406
+2026-06-29 21:41:36 | mafw | Position: 349 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4407
+2026-06-29 21:41:36 | mammoth | Position: 350 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4408
+2026-06-29 21:41:36 | memory-profiler | Position: 353 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4411
+2026-06-29 21:41:36 | mkdocs-bootstrap | Position: 354 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4412
+2026-06-29 21:41:36 | mkdocs-windmillex | Position: 355 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4413
+2026-06-29 21:41:36 | mo-dots | Position: 357 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4415
+2026-06-29 21:41:36 | mo-future | Position: 358 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4416
+2026-06-29 21:41:36 | mo-imports | Position: 359 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4417
+2026-06-29 21:41:36 | mo-parsing | Position: 360 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4418
+2026-06-29 21:41:36 | mo-sql-parsing | Position: 361 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4419
+2026-06-29 21:41:36 | pyfiglet | Position: 488 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4536
+2026-06-29 21:41:36 | pymongo-search-utils | Position: 505 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4553
 
 # Cleared on 2026-06-29 22:33:41
-2026-06-29 22:33:41 | django-tasks | Position: 223 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | mcp-ashare-quant | Position: 340 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | model-bakery | Position: 343 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | modelsearch | Position: 344 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | mozilla-django-oidc | Position: 347 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | mypy-dev | Position: 348 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | myst-parser | Position: 350 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | naked | Position: 351 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | netmiko | Position: 354 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | nicknames | Position: 356 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | ntc-templates | Position: 358 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | ntplib | Position: 360 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | objsize | Position: 363 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | odfpy | Position: 364 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | ollama | Position: 367 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | openai-python-types | Position: 370 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | openapi-core | Position: 372 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | openshift | Position: 374 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | opentelemetry-instrumentation-asyncio | Position: 381 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | python-string-utils | Position: 541 | Priority: LOW (lower priority)
-2026-06-29 22:33:41 | textfsm | Position: 633 | Priority: LOW (lower priority)
+2026-06-29 22:33:41 | django-tasks | Position: 223 | Priority: LOW (lower priority) | PR: N/A
+2026-06-29 22:33:41 | mcp-ashare-quant | Position: 340 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4410
+2026-06-29 22:33:41 | model-bakery | Position: 343 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4421
+2026-06-29 22:33:41 | modelsearch | Position: 344 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4422
+2026-06-29 22:33:41 | mozilla-django-oidc | Position: 347 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4425
+2026-06-29 22:33:41 | mypy-dev | Position: 348 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4426
+2026-06-29 22:33:41 | myst-parser | Position: 350 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4427
+2026-06-29 22:33:41 | naked | Position: 351 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4428
+2026-06-29 22:33:41 | netmiko | Position: 354 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4430
+2026-06-29 22:33:41 | nicknames | Position: 356 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4432
+2026-06-29 22:33:41 | ntc-templates | Position: 358 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4434
+2026-06-29 22:33:41 | ntplib | Position: 360 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4436
+2026-06-29 22:33:41 | objsize | Position: 363 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4437
+2026-06-29 22:33:41 | odfpy | Position: 364 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4438
+2026-06-29 22:33:41 | ollama | Position: 367 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4441
+2026-06-29 22:33:41 | openai-python-types | Position: 370 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4443
+2026-06-29 22:33:41 | openapi-core | Position: 372 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4445
+2026-06-29 22:33:41 | openshift | Position: 374 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4447
+2026-06-29 22:33:41 | opentelemetry-instrumentation-asyncio | Position: 381 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4454
+2026-06-29 22:33:41 | python-string-utils | Position: 541 | Priority: LOW (lower priority) | PR: N/A
+2026-06-29 22:33:41 | textfsm | Position: 633 | Priority: LOW (lower priority) | PR: N/A
 
 # Cleared on 2026-06-29 23:31:38
-2026-06-29 23:31:38 | opentelemetry-exporter-gcp-logging | Position: 357 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-exporter-gcp-monitoring | Position: 358 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-instrumentation-cohere | Position: 366 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-instrumentation-haystack | Position: 369 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-instrumentation-mcp | Position: 374 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-instrumentation-openai-agents | Position: 377 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-instrumentation-watsonx | Position: 387 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-instrumentation-weaviate | Position: 388 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-semantic-conventions-ai | Position: 389 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | opentelemetry-util-genai | Position: 390 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | pandas-schema | Position: 394 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | param | Position: 397 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | parityos | Position: 398 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | parse-type | Position: 399 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | parsit | Position: 400 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | pathlib2 | Position: 403 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | PCRE2 | Position: 405 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | phx-class-registry | Position: 410 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | pickleDB | Position: 411 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | picobox | Position: 412 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | ping3 | Position: 413 | Priority: LOW (lower priority)
-2026-06-29 23:31:38 | pip-review | Position: 416 | Priority: LOW (lower priority)
+2026-06-29 23:31:38 | opentelemetry-exporter-gcp-logging | Position: 357 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4448
+2026-06-29 23:31:38 | opentelemetry-exporter-gcp-monitoring | Position: 358 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4449
+2026-06-29 23:31:38 | opentelemetry-instrumentation-cohere | Position: 366 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4458
+2026-06-29 23:31:38 | opentelemetry-instrumentation-haystack | Position: 369 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4461
+2026-06-29 23:31:38 | opentelemetry-instrumentation-mcp | Position: 374 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4465
+2026-06-29 23:31:38 | opentelemetry-instrumentation-openai-agents | Position: 377 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4468
+2026-06-29 23:31:38 | opentelemetry-instrumentation-watsonx | Position: 387 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4478
+2026-06-29 23:31:38 | opentelemetry-instrumentation-weaviate | Position: 388 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4479
+2026-06-29 23:31:38 | opentelemetry-semantic-conventions-ai | Position: 389 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4480
+2026-06-29 23:31:38 | opentelemetry-util-genai | Position: 390 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4481
+2026-06-29 23:31:38 | pandas-schema | Position: 394 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4486
+2026-06-29 23:31:38 | param | Position: 397 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4489
+2026-06-29 23:31:38 | parityos | Position: 398 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4490
+2026-06-29 23:31:38 | parse-type | Position: 399 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4491
+2026-06-29 23:31:38 | parsit | Position: 400 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4492
+2026-06-29 23:31:38 | pathlib2 | Position: 403 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4495
+2026-06-29 23:31:38 | PCRE2 | Position: 405 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4497
+2026-06-29 23:31:38 | phx-class-registry | Position: 410 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4501
+2026-06-29 23:31:38 | pickleDB | Position: 411 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4502
+2026-06-29 23:31:38 | picobox | Position: 412 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4503
+2026-06-29 23:31:38 | ping3 | Position: 413 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4504
+2026-06-29 23:31:38 | pip-review | Position: 416 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4507
 
 # Cleared on 2026-06-30 01:15:17
-2026-06-30 01:15:17 | databackend | Position: 168 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pins | Position: 393 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pip-audit | Position: 394 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pipdeptree | Position: 396 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | platform-binary | Position: 399 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | poetry-auto-export | Position: 400 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | ppp-connectors | Position: 405 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pptagent-pptx | Position: 406 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | praisonaiagents | Position: 407 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pre-commit-hooks | Position: 408 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | probableparsing | Position: 409 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | prometheus-flask-exporter | Position: 411 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | puremagic | Position: 417 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyaml-env | Position: 419 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pydata-sphinx-theme | Position: 423 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyfakefs | Position: 426 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyflame | Position: 427 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyHanko | Position: 429 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyhanko-certvalidator | Position: 430 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | PyInstaller | Position: 432 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyinstaller-hooks-contrib | Position: 433 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyinvoke | Position: 434 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyIsEmail | Position: 435 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pyjson5 | Position: 436 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | PyLink | Position: 438 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pylint-plugin-utils | Position: 440 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | pylint-pytest | Position: 442 | Priority: LOW (lower priority)
-2026-06-30 01:15:17 | uritools | Position: 602 | Priority: LOW (lower priority)
+2026-06-30 01:15:17 | databackend | Position: 168 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 01:15:17 | pins | Position: 393 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4505
+2026-06-30 01:15:17 | pip-audit | Position: 394 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4506
+2026-06-30 01:15:17 | pipdeptree | Position: 396 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4509
+2026-06-30 01:15:17 | platform-binary | Position: 399 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4512
+2026-06-30 01:15:17 | poetry-auto-export | Position: 400 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4513
+2026-06-30 01:15:17 | ppp-connectors | Position: 405 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4517
+2026-06-30 01:15:17 | pptagent-pptx | Position: 406 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4518
+2026-06-30 01:15:17 | praisonaiagents | Position: 407 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4519
+2026-06-30 01:15:17 | pre-commit-hooks | Position: 408 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4520
+2026-06-30 01:15:17 | probableparsing | Position: 409 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4522
+2026-06-30 01:15:17 | prometheus-flask-exporter | Position: 411 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4524
+2026-06-30 01:15:17 | puremagic | Position: 417 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4526
+2026-06-30 01:15:17 | pyaml-env | Position: 419 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4528
+2026-06-30 01:15:17 | pydata-sphinx-theme | Position: 423 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4532
+2026-06-30 01:15:17 | pyfakefs | Position: 426 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4535
+2026-06-30 01:15:17 | pyflame | Position: 427 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4537
+2026-06-30 01:15:17 | pyHanko | Position: 429 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4539
+2026-06-30 01:15:17 | pyhanko-certvalidator | Position: 430 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4540
+2026-06-30 01:15:17 | PyInstaller | Position: 432 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4542
+2026-06-30 01:15:17 | pyinstaller-hooks-contrib | Position: 433 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4543
+2026-06-30 01:15:17 | pyinvoke | Position: 434 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4544
+2026-06-30 01:15:17 | pyIsEmail | Position: 435 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4545
+2026-06-30 01:15:17 | pyjson5 | Position: 436 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4546
+2026-06-30 01:15:17 | PyLink | Position: 438 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4548
+2026-06-30 01:15:17 | pylint-plugin-utils | Position: 440 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4550
+2026-06-30 01:15:17 | pylint-pytest | Position: 442 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4552
+2026-06-30 01:15:17 | uritools | Position: 602 | Priority: LOW (lower priority) | PR: N/A
 
 # Cleared on 2026-06-30 11:13:49
-2026-06-30 11:13:49 | opentelemetry-instrumentation-httpx | Position: 365 | Priority: LOW (lower priority)
+2026-06-30 11:13:49 | opentelemetry-instrumentation-httpx | Position: 365 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2294
 
 # Cleared on 2026-06-30 12:56:42
-2026-06-30 12:56:42 | opentelemetry-exporter-gcp-trace | Position: 356 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-aiohttp-server | Position: 357 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-aiokafka | Position: 358 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-bedrock | Position: 360 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-click | Position: 362 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-google-genai | Position: 364 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-kafka-python | Position: 365 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-langchain | Position: 366 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-openai | Position: 369 | Priority: LOW (lower priority)
-2026-06-30 12:56:42 | opentelemetry-instrumentation-qdrant | Position: 374 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-exporter-gcp-trace | Position: 356 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4450
+2026-06-30 12:56:42 | opentelemetry-instrumentation-aiohttp-server | Position: 357 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4451
+2026-06-30 12:56:42 | opentelemetry-instrumentation-aiokafka | Position: 358 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4452
+2026-06-30 12:56:42 | opentelemetry-instrumentation-bedrock | Position: 360 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4455
+2026-06-30 12:56:42 | opentelemetry-instrumentation-click | Position: 362 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4457
+2026-06-30 12:56:42 | opentelemetry-instrumentation-google-genai | Position: 364 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4460
+2026-06-30 12:56:42 | opentelemetry-instrumentation-kafka-python | Position: 365 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4462
+2026-06-30 12:56:42 | opentelemetry-instrumentation-langchain | Position: 366 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4463
+2026-06-30 12:56:42 | opentelemetry-instrumentation-openai | Position: 369 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4467
+2026-06-30 12:56:42 | opentelemetry-instrumentation-qdrant | Position: 374 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4473
+
+# Cleared on 2026-06-30 14:56:59
+2026-06-30 14:56:59 | backend.ai-krunner-alpine | Position: 105 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4594
+2026-06-30 14:56:59 | backports-datetime-fromisoformat | Position: 106 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4595
+2026-06-30 14:56:59 | backports.entry-points-selectable | Position: 107 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4596
+2026-06-30 14:56:59 | balldontlie | Position: 108 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4597
+2026-06-30 14:56:59 | bayketinymce-django | Position: 110 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4599
+2026-06-30 14:56:59 | beanie | Position: 111 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4600
+2026-06-30 14:56:59 | behave | Position: 112 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4601
+2026-06-30 14:56:59 | behave-django | Position: 113 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4602
+2026-06-30 14:56:59 | behave-html-formatter | Position: 114 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4603
+2026-06-30 14:56:59 | better-profanity | Position: 116 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4605
+2026-06-30 14:56:59 | bitmath | Position: 117 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4606
+2026-06-30 14:56:59 | Bokeh | Position: 120 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4608
+2026-06-30 14:56:59 | bump-my-version | Position: 123 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4611
+2026-06-30 14:56:59 | calamardolauncher | Position: 124 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4612
+2026-06-30 14:56:59 | cerberus | Position: 129 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4617
+2026-06-30 14:56:59 | cfenv | Position: 130 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4618
+2026-06-30 14:56:59 | channels | Position: 132 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4620
+2026-06-30 14:56:59 | check-wheel-contents | Position: 133 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4621
+2026-06-30 14:56:59 | circuitbreaker | Position: 135 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4622
+2026-06-30 14:56:59 | clipboard | Position: 137 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4624
+2026-06-30 14:56:59 | clvm-tools-rs | Position: 139 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4626
+2026-06-30 14:56:59 | colorclass | Position: 142 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4629
+2026-06-30 14:56:59 | Command | Position: 143 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4630
+2026-06-30 14:56:59 | concurrent-log-handler | Position: 145 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4632
+2026-06-30 14:56:59 | conda-index | Position: 146 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4633
+2026-06-30 14:56:59 | contextvars | Position: 148 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4634
+2026-06-30 14:56:59 | CoVeriTeam | Position: 149 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4635
+2026-06-30 14:56:59 | crispy-bootstrap5 | Position: 150 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4636
+2026-06-30 14:56:59 | crypto | Position: 151 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4637
+2026-06-30 14:56:59 | cucumber-tag-expressions | Position: 154 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4640
+2026-06-30 14:56:59 | curlify | Position: 157 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4643
+2026-06-30 14:56:59 | cx-freeze | Position: 159 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4645
+2026-06-30 14:56:59 | daphne | Position: 163 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4649
+2026-06-30 14:56:59 | darbiadev-labels | Position: 164 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4650
+2026-06-30 14:56:59 | darkdetect | Position: 166 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 14:56:59 | django-crispy-forms | Position: 190 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 14:56:59 | shellescape | Position: 506 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 14:56:59 | wheel-filename | Position: 578 | Priority: LOW (lower priority) | PR: N/A
 
 # Cleared on 2026-06-30 17:46:27
 2026-06-30 17:46:27 | backend.ai-krunner-alpine | Position: 105 | Priority: LOW (lower priority)

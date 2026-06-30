@@ -7,12 +7,25 @@ Filter out found packages and log them as cleared bounties.
 import subprocess
 import re
 import sys
+import json
 from pathlib import Path
 from datetime import datetime
 
 def normalize_package_name(name):
     """Normalize package name for comparison"""
     return name.lower().replace('_', '-').replace('.', '-').strip()
+
+def load_pr_data(filepath):
+    """Load PR data from JSON file"""
+    try:
+        with open(filepath, 'r') as f:
+            return json.load(f)
+    except FileNotFoundError:
+        print(f"Warning: {filepath} not found, PR links will not be included", file=sys.stderr)
+        return {}
+    except json.JSONDecodeError as e:
+        print(f"Warning: Error parsing {filepath}: {e}", file=sys.stderr)
+        return {}
 
 def fetch_trusted_packages():
     """Fetch packages from Red Hat trusted libraries index"""
@@ -73,12 +86,13 @@ def append_to_cleared_log(log_path, cleared_packages):
         with open(log_path, 'w') as f:
             f.write("# Cleared Bounties Log\n")
             f.write("# Packages that were found in Red Hat trusted libraries and removed from bounty board\n")
-            f.write("# Format: YYYY-MM-DD HH:MM:SS | package-name\n\n")
+            f.write("# Format: YYYY-MM-DD HH:MM:SS | package-name | position | priority | PR link\n\n")
 
     with open(log_path, 'a') as f:
         f.write(f"# Cleared on {timestamp}\n")
         for pkg_info in cleared_packages:
-            f.write(f"{timestamp} | {pkg_info['package']} | Position: {pkg_info['position']} | Priority: {pkg_info['priority']}\n")
+            pr_link = pkg_info.get('pr_link', 'N/A')
+            f.write(f"{timestamp} | {pkg_info['package']} | Position: {pkg_info['position']} | Priority: {pkg_info['priority']} | PR: {pr_link}\n")
         f.write("\n")
 
 def get_priority_level(position):
@@ -90,13 +104,36 @@ def get_priority_level(position):
     else:
         return "LOW (lower priority)"
 
+def get_pr_link(package_name, pr_data):
+    """Get the PR link for a package from the PR data"""
+    # Try exact match first
+    if package_name in pr_data:
+        prs = pr_data[package_name]
+        if prs:
+            # Return the first PR link (or most recent if multiple)
+            return prs[0].get('link', 'N/A')
+
+    # Try normalized matching
+    normalized_pkg = normalize_package_name(package_name)
+    for pkg_key, prs in pr_data.items():
+        if normalize_package_name(pkg_key) == normalized_pkg and prs:
+            return prs[0].get('link', 'N/A')
+
+    return 'N/A'
+
 def main():
     bounty_board_path = Path('bounty-board.txt')
     cleared_log_path = Path('cleared-bounties.log')
+    pr_data_path = Path('calunga-index-prs.json')
 
     if not bounty_board_path.exists():
         print(f"Error: {bounty_board_path} not found", file=sys.stderr)
         sys.exit(1)
+
+    # Load PR data
+    print("Loading PR data...", file=sys.stderr)
+    pr_data = load_pr_data(pr_data_path)
+    print(f"Loaded PR data for {len(pr_data)} packages", file=sys.stderr)
 
     # Read current bounty board
     print("Reading bounty board...", file=sys.stderr)
@@ -117,13 +154,15 @@ def main():
 
         if normalized in trusted_normalized:
             priority = get_priority_level(idx)
+            pr_link = get_pr_link(pkg, pr_data)
             cleared_info = {
                 'package': pkg,
                 'position': idx,
-                'priority': priority
+                'priority': priority,
+                'pr_link': pr_link
             }
             cleared_packages.append(cleared_info)
-            print(f"  ✓ CLEARED: {pkg} (position {idx}, {priority})", file=sys.stderr)
+            print(f"  ✓ CLEARED: {pkg} (position {idx}, {priority}) - PR: {pr_link}", file=sys.stderr)
         else:
             remaining_packages.append(pkg)
 
