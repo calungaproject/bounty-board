@@ -258,3 +258,21 @@
 2026-06-30 12:56:42 | opentelemetry-instrumentation-openai | Position: 369 | Priority: LOW (lower priority)
 2026-06-30 12:56:42 | opentelemetry-instrumentation-qdrant | Position: 374 | Priority: LOW (lower priority)
 
+# Cleared on 2026-06-30 17:46:27
+2026-06-30 17:46:27 | backend.ai-krunner-alpine | Position: 105 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | backports-datetime-fromisoformat | Position: 106 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | backports.entry-points-selectable | Position: 107 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | balldontlie | Position: 108 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | bayketinymce-django | Position: 110 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | beanie | Position: 111 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | behave | Position: 112 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | behave-django | Position: 113 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | behave-html-formatter | Position: 114 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | better-profanity | Position: 116 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | bitmath | Position: 117 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | Bokeh | Position: 120 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | bump-my-version | Position: 123 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | cerberus | Position: 129 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | cfenv | Position: 130 | Priority: LOW (lower priority)
+2026-06-30 17:46:27 | cucumber-tag-expressions | Position: 154 | Priority: LOW (lower priority)
+
