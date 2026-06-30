@@ -435,3 +435,35 @@
 2026-06-30 22:38:22 | python-crontab | Position: 357 | Priority: LOW (lower priority) | PR: N/A
 2026-06-30 22:38:22 | python-decouple | Position: 358 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-06-30 23:37:33
+2026-06-30 23:37:33 | ntlm-auth | Position: 248 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4435
+2026-06-30 23:37:33 | pyhumps | Position: 302 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4541
+2026-06-30 23:37:33 | Python-Markdown | Position: 335 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | python-nvd3 | Position: 337 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | python-pptx-text-replacer | Position: 338 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | python-snappy | Position: 339 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | python-stdnum | Position: 340 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | python-tblib | Position: 341 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | python-ulid | Position: 342 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | pytz-deprecation-shim | Position: 344 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | pyxlsb | Position: 347 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | pyzipper | Position: 348 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | Quart | Position: 349 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | quart-auth | Position: 350 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | quart-authlib | Position: 351 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | quart-cors | Position: 352 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | quart-flask-patch | Position: 353 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | quart-schema | Position: 354 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | recommonmark | Position: 357 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | redisvl | Position: 359 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | requests-auth | Position: 361 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | requests-cache | Position: 362 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | requests-ntlm2 | Position: 365 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | requests-pkcs12 | Position: 366 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | rinoh-typeface-dejavuserif | Position: 367 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | rinoh-typeface-texgyrecursor | Position: 368 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | rinoh-typeface-texgyreheros | Position: 369 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | rinoh-typeface-texgyrepagella | Position: 370 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | RinohType | Position: 371 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 23:37:33 | roman-numerals-py | Position: 374 | Priority: LOW (lower priority) | PR: N/A
+
