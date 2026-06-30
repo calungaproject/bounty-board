@@ -37,7 +37,7 @@ jobs:
 
       - name: Fetch Calunga PR data
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
         run: |
           python fetch_calunga_prs.py
 
