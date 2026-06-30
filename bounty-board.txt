@@ -128,12 +128,6 @@ cvxpy
 cx_Oracle
 dagster
 dagster-graphql
-daphne
-darbiadev-labels
-darglint
-darkdetect
-dash
-databases
 databricks-connect
 datamodel-code-generator
 db-dtypes
@@ -142,7 +136,6 @@ DBNavigator
 deepeval
 dependency-injector
 desimodel
-dicttoxml
 dijkprofile-annotator
 django-508-plugins
 django-admin-toolbox
