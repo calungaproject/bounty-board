@@ -346,3 +346,22 @@
 2026-06-30 19:19:14 | databases | Position: 136 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4654
 2026-06-30 19:19:14 | dicttoxml | Position: 145 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4660
 
+# Cleared on 2026-06-30 19:57:59
+2026-06-30 19:57:59 | django-508-plugins | Position: 140 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4662
+2026-06-30 19:57:59 | django-allauth | Position: 142 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-appconf | Position: 143 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-bootstrap3-datepicker | Position: 144 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-bootstrap5 | Position: 145 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-celery-results | Position: 147 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-commands2 | Position: 148 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-comments-xtd | Position: 149 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-cryptography-django5 | Position: 151 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-debug-toolbar | Position: 153 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-grappelli | Position: 155 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-mongoengine | Position: 166 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-oauth-toolkit | Position: 169 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-picker | Position: 170 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-rest-framework-mongoengine | Position: 172 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-schema-viewer | Position: 173 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 19:57:59 | django-session-timeout | Position: 174 | Priority: LOW (lower priority) | PR: N/A
+
