@@ -246,3 +246,15 @@
 # Cleared on 2026-06-30 11:13:49
 2026-06-30 11:13:49 | opentelemetry-instrumentation-httpx | Position: 365 | Priority: LOW (lower priority)
 
+# Cleared on 2026-06-30 12:56:42
+2026-06-30 12:56:42 | opentelemetry-exporter-gcp-trace | Position: 356 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-aiohttp-server | Position: 357 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-aiokafka | Position: 358 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-bedrock | Position: 360 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-click | Position: 362 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-google-genai | Position: 364 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-kafka-python | Position: 365 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-langchain | Position: 366 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-openai | Position: 369 | Priority: LOW (lower priority)
+2026-06-30 12:56:42 | opentelemetry-instrumentation-qdrant | Position: 374 | Priority: LOW (lower priority)
+
