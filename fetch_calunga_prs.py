@@ -9,23 +9,25 @@ import os
 import sys
 import urllib.request
 import urllib.error
+from datetime import datetime, timezone
 
 
-def fetch_github_prs(owner, repo, label):
+def fetch_github_prs(owner, repo, label, since_date="2026-05-01"):
     """
-    Fetch PRs from GitHub API with specified label.
+    Fetch PRs from GitHub API with specified label using search API.
     Handles pagination to get all PRs.
 
     Args:
         owner: Repository owner
         repo: Repository name
         label: Label to filter by
+        since_date: ISO date string (YYYY-MM-DD) to filter PRs created on or after this date
 
     Returns:
         List of PR data dictionaries
     """
     base_url = "https://api.github.com"
-    endpoint = f"/repos/{owner}/{repo}/pulls"
+    endpoint = "/search/issues"
 
     # Check for GitHub token (optional but recommended for rate limits)
     token = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
@@ -38,27 +40,32 @@ def fetch_github_prs(owner, repo, label):
     if token:
         headers['Authorization'] = f'Bearer {token}'
 
+    # Build search query: is:pr repo:owner/repo label:"label" created:>=YYYY-MM-DD
+    from urllib.parse import quote
+    query = f'is:pr repo:{owner}/{repo} label:"{label}" created:>={since_date}'
+
     all_prs = []
     page = 1
     per_page = 100
 
     while True:
-        params = f"?state=all&per_page={per_page}&page={page}"
+        params = f"?q={quote(query)}&per_page={per_page}&page={page}&sort=created&order=desc"
         url = f"{base_url}{endpoint}{params}"
 
         try:
             req = urllib.request.Request(url, headers=headers)
             with urllib.request.urlopen(req) as response:
-                page_prs = json.loads(response.read().decode())
+                data = json.loads(response.read().decode())
 
-            if not page_prs:
+            items = data.get('items', [])
+            if not items:
                 break
 
-            all_prs.extend(page_prs)
-            print(f"Fetched page {page} ({len(page_prs)} PRs)")
+            all_prs.extend(items)
+            print(f"Fetched page {page} ({len(items)} PRs)")
 
             # If we got fewer than per_page, we've reached the end
-            if len(page_prs) < per_page:
+            if len(items) < per_page:
                 break
 
             page += 1
@@ -74,14 +81,7 @@ def fetch_github_prs(owner, repo, label):
             print(f"Error: {e}", file=sys.stderr)
             sys.exit(1)
 
-    # Filter PRs by label
-    filtered_prs = []
-    for pr in all_prs:
-        pr_labels = [l['name'] for l in pr.get('labels', [])]
-        if label in pr_labels:
-            filtered_prs.append(pr)
-
-    return filtered_prs
+    return all_prs
 
 
 def extract_package_name(pr):
@@ -108,7 +108,101 @@ def extract_package_name(pr):
     return title.strip()
 
 
-def format_pr_data(prs):
+def fetch_check_status(owner, repo, pr_number, sha, token=None):
+    """
+    Fetch check run status for a PR's latest commit.
+
+    Returns:
+        Dictionary with check status information
+    """
+    if not sha:
+        return None
+
+    base_url = "https://api.github.com"
+    endpoint = f"/repos/{owner}/{repo}/commits/{sha}/check-runs"
+    url = f"{base_url}{endpoint}"
+
+    headers = {
+        'Accept': 'application/vnd.github+json',
+        'X-GitHub-Api-Version': '2022-11-28'
+    }
+
+    if token:
+        headers['Authorization'] = f'Bearer {token}'
+
+    try:
+        req = urllib.request.Request(url, headers=headers)
+        with urllib.request.urlopen(req) as response:
+            data = json.loads(response.read().decode())
+
+        check_runs = data.get('check_runs', [])
+
+        if not check_runs:
+            return None
+
+        # Aggregate check status and track failed checks
+        statuses = {
+            'success': 0,
+            'failure': 0,
+            'pending': 0,
+            'skipped': 0,
+            'total': len(check_runs)
+        }
+
+        failed_checks = []
+        pending_checks = []
+
+        for check in check_runs:
+            conclusion = check.get('conclusion')
+            status = check.get('status')
+            name = check.get('name', 'Unknown')
+
+            if conclusion == 'success':
+                statuses['success'] += 1
+            elif conclusion in ['failure', 'timed_out', 'action_required']:
+                statuses['failure'] += 1
+                failed_checks.append({
+                    'name': name,
+                    'conclusion': conclusion,
+                    'url': check.get('html_url')
+                })
+            elif conclusion == 'skipped':
+                statuses['skipped'] += 1
+            elif status == 'in_progress' or status == 'queued':
+                statuses['pending'] += 1
+                pending_checks.append(name)
+
+        # Determine overall status
+        if statuses['failure'] > 0:
+            overall = 'failure'
+        elif statuses['pending'] > 0:
+            overall = 'pending'
+        elif statuses['success'] > 0:
+            overall = 'success'
+        else:
+            overall = 'unknown'
+
+        result = {
+            'overall': overall,
+            'details': statuses
+        }
+
+        # Add failed check details if any
+        if failed_checks:
+            result['failed_checks'] = failed_checks
+
+        # Add pending check names if any
+        if pending_checks:
+            result['pending_checks'] = pending_checks
+
+        return result
+
+    except Exception as e:
+        # Don't fail the whole script if check fetching fails
+        return None
+
+
+def format_pr_data(prs, owner, repo, token=None, fetch_checks=True):
     """
     Format PR data into required structure.
 
@@ -116,8 +210,9 @@ def format_pr_data(prs):
         Dictionary with package names as keys and lists of PRs as values
     """
     result = {}
+    total = len(prs)
 
-    for pr in prs:
+    for idx, pr in enumerate(prs, 1):
         package_name = extract_package_name(pr)
 
         pr_data = {
@@ -136,10 +231,23 @@ def format_pr_data(prs):
         else:
             pr_data['merged'] = False
 
+        # Fetch check status for open PRs
+        if fetch_checks and pr['state'] == 'open':
+            sha = pr.get('head', {}).get('sha')
+            if sha:
+                if idx % 10 == 0:
+                    print(f"Fetching checks for PR #{pr['number']} ({idx}/{total})...", end='\r')
+                check_status = fetch_check_status(owner, repo, pr['number'], sha, token)
+                if check_status:
+                    pr_data['checks'] = check_status
+
         # Group PRs by package name
         if package_name not in result:
             result[package_name] = []
         result[package_name].append(pr_data)
+
+    if fetch_checks:
+        print()  # Clear the progress line
 
     return result
 
@@ -150,12 +258,16 @@ def main():
     label = "pkg onboarding"
     output_file = "calunga-index-prs.json"
 
-    print(f"Fetching PRs from {owner}/{repo} with label '{label}'...")
+    # Get GitHub token
+    token = os.environ.get('GITHUB_TOKEN') or os.environ.get('GH_TOKEN')
 
-    prs = fetch_github_prs(owner, repo, label)
-    print(f"Found {len(prs)} PRs with label '{label}'")
+    print(f"Fetching PRs from {owner}/{repo} with label '{label}' since 2026-05-01...")
 
-    formatted_data = format_pr_data(prs)
+    prs = fetch_github_prs(owner, repo, label, since_date="2026-05-01")
+    print(f"Found {len(prs)} PRs with label '{label}' created since 2026-05-01")
+
+    print(f"\nFormatting PR data and fetching check status...")
+    formatted_data = format_pr_data(prs, owner, repo, token, fetch_checks=True)
 
     # Write to JSON file
     with open(output_file, 'w') as f:
@@ -168,6 +280,12 @@ def main():
     closed_count = sum(1 for pr in all_prs if pr['status'] == 'closed')
     merged_count = sum(1 for pr in all_prs if pr.get('merged'))
 
+    # Check statistics
+    prs_with_checks = sum(1 for pr in all_prs if 'checks' in pr)
+    failed_checks = sum(1 for pr in all_prs if pr.get('checks', {}).get('overall') == 'failure')
+    pending_checks = sum(1 for pr in all_prs if pr.get('checks', {}).get('overall') == 'pending')
+    passing_checks = sum(1 for pr in all_prs if pr.get('checks', {}).get('overall') == 'success')
+
     print(f"Written {len(formatted_data)} packages with {total_prs} total PRs to {output_file}")
 
     print(f"\nSummary:")
@@ -176,6 +294,13 @@ def main():
     print(f"  Open: {open_count}")
     print(f"  Closed: {closed_count}")
     print(f"  Merged: {merged_count}")
+
+    if prs_with_checks > 0:
+        print(f"\nCheck Status:")
+        print(f"  PRs with checks: {prs_with_checks}")
+        print(f"  Passing: {passing_checks}")
+        print(f"  Failing: {failed_checks}")
+        print(f"  Pending: {pending_checks}")
 
 
 if __name__ == "__main__":
