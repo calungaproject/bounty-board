@@ -9,7 +9,53 @@ import os
 import sys
 import urllib.request
 import urllib.error
+import time
 from datetime import datetime, timezone
+
+
+def fetch_with_retry(url, headers, max_retries=5, initial_wait=5):
+    """
+    Fetch URL with retry logic for rate limiting.
+
+    Args:
+        url: URL to fetch
+        headers: Request headers
+        max_retries: Maximum number of retry attempts
+        initial_wait: Initial wait time in seconds (doubles on each retry)
+
+    Returns:
+        Response data as dict
+    """
+    wait_time = initial_wait
+
+    for attempt in range(max_retries):
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            with urllib.request.urlopen(req) as response:
+                return json.loads(response.read().decode())
+
+        except urllib.error.HTTPError as e:
+            if e.code == 403:
+                # Check if it's a rate limit error
+                if attempt < max_retries - 1:
+                    print(f"Rate limit hit, waiting {wait_time}s before retry {attempt + 1}/{max_retries}...", file=sys.stderr)
+                    time.sleep(wait_time)
+                    wait_time *= 2  # Exponential backoff
+                    continue
+                else:
+                    print(f"Rate limit exceeded after {max_retries} retries", file=sys.stderr)
+                    raise
+            elif e.code == 401:
+                print("Authentication failed. Set GITHUB_TOKEN environment variable.", file=sys.stderr)
+                raise
+            else:
+                print(f"HTTP Error {e.code}: {e.reason}", file=sys.stderr)
+                raise
+        except Exception as e:
+            print(f"Error: {e}", file=sys.stderr)
+            raise
+
+    raise Exception(f"Failed after {max_retries} retries")
 
 
 def fetch_github_prs(owner, repo, label, since_date="2026-05-01"):
@@ -53,9 +99,7 @@ def fetch_github_prs(owner, repo, label, since_date="2026-05-01"):
         url = f"{base_url}{endpoint}{params}"
 
         try:
-            req = urllib.request.Request(url, headers=headers)
-            with urllib.request.urlopen(req) as response:
-                data = json.loads(response.read().decode())
+            data = fetch_with_retry(url, headers)
 
             items = data.get('items', [])
             if not items:
@@ -70,15 +114,8 @@ def fetch_github_prs(owner, repo, label, since_date="2026-05-01"):
 
             page += 1
 
-        except urllib.error.HTTPError as e:
-            print(f"Error fetching PRs: {e.code} {e.reason}", file=sys.stderr)
-            if e.code == 401:
-                print("Authentication failed. Set GITHUB_TOKEN environment variable.", file=sys.stderr)
-            elif e.code == 403:
-                print("Rate limit exceeded. Set GITHUB_TOKEN for higher limits.", file=sys.stderr)
-            sys.exit(1)
         except Exception as e:
-            print(f"Error: {e}", file=sys.stderr)
+            print(f"Fatal error fetching PRs: {e}", file=sys.stderr)
             sys.exit(1)
 
     return all_prs
@@ -131,9 +168,7 @@ def fetch_check_status(owner, repo, pr_number, sha, token=None):
         headers['Authorization'] = f'Bearer {token}'
 
     try:
-        req = urllib.request.Request(url, headers=headers)
-        with urllib.request.urlopen(req) as response:
-            data = json.loads(response.read().decode())
+        data = fetch_with_retry(url, headers, max_retries=3, initial_wait=2)
 
         check_runs = data.get('check_runs', [])
 
