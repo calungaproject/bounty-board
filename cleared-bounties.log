@@ -365,3 +365,28 @@
 2026-06-30 19:57:59 | django-schema-viewer | Position: 173 | Priority: LOW (lower priority) | PR: N/A
 2026-06-30 19:57:59 | django-session-timeout | Position: 174 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-06-30 20:48:14
+2026-06-30 20:48:14 | cssbeautifier | Position: 124 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4639
+2026-06-30 20:48:14 | django-ipware | Position: 149 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | django-sql-explorer | Position: 159 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | django-structlog | Position: 162 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | django-stubs | Position: 163 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | django-taggit | Position: 164 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | django-treebeard | Position: 166 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | django-url-filter | Position: 167 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djangorestframework-jsonapi | Position: 169 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djangorestframework-simplejwt | Position: 170 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djangorestframework-stubs | Position: 171 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djangorestframework-yaml | Position: 172 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djlint | Position: 173 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djongo | Position: 174 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | djongo5 | Position: 176 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | dotbot-lh2-calibration | Position: 178 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | draftjs_exporter | Position: 180 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | drf-api-logger | Position: 181 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | drf-spectacular-sidecar | Position: 183 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | drf-standardized-errors | Position: 184 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | enum-compat | Position: 198 | Priority: LOW (lower priority) | PR: N/A
+2026-06-30 20:48:14 | jsbeautifier | Position: 257 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4375
+2026-06-30 20:48:14 | python-ipware | Position: 397 | Priority: LOW (lower priority) | PR: N/A
+
