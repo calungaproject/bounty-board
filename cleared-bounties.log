@@ -496,3 +496,25 @@
 # Cleared on 2026-07-01 07:47:51
 2026-07-01 07:47:51 | django-admin-toolbox | Position: 139 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4663
 
+# Cleared on 2026-07-01 09:22:20
+2026-07-01 09:22:20 | arize-phoenix-evals | Position: 2 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4186
+2026-07-01 09:22:20 | sqlean-py | Position: 14 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4197
+2026-07-01 09:22:20 | aiohttp-client-cache | Position: 17 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4201
+2026-07-01 09:22:20 | beniget | Position: 19 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4204
+2026-07-01 09:22:20 | cint | Position: 20 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4205
+2026-07-01 09:22:20 | dirtyjson | Position: 22 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4207
+2026-07-01 09:22:20 | fickling | Position: 24 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4210
+2026-07-01 09:22:20 | django-yugabytedb | Position: 159 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | docx2txt | Position: 161 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | drf-optionalfields | Position: 163 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | duplication | Position: 169 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | ebcdic | Position: 171 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | ecs-logging | Position: 172 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | fixedint | Position: 176 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | python-memcached | Position: 332 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | red-black-tree-mod | Position: 337 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | repoze.lru | Position: 338 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | TextBlob | Position: 378 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | textdistance | Position: 379 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 09:22:20 | types-confluent-kafka | Position: 383 | Priority: LOW (lower priority) | PR: N/A
+
