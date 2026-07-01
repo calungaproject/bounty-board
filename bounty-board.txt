@@ -136,7 +136,6 @@ deepeval
 dependency-injector
 desimodel
 dijkprofile-annotator
-django-admin-toolbox
 django-celery-beat
 django_coverage_plugin
 django-database-prefix
