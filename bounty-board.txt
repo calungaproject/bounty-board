@@ -141,7 +141,6 @@ duckdb-extensions
 easygui
 en-core-web-sm-mirror
 facets-overview
-fastapi-azure-auth
 Flake8-pyproject
 Flask-Inputs
 flask-mongoengine
