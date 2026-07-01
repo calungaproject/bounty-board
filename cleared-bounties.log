@@ -518,3 +518,45 @@
 2026-07-01 09:22:20 | textdistance | Position: 379 | Priority: LOW (lower priority) | PR: N/A
 2026-07-01 09:22:20 | types-confluent-kafka | Position: 383 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-07-01 11:16:43
+2026-07-01 11:16:43 | google-search-results | Position: 18 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4211
+2026-07-01 11:16:43 | gputil | Position: 19 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4212
+2026-07-01 11:16:43 | stdlib-list | Position: 59 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4250
+2026-07-01 11:16:43 | aiologger | Position: 66 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4268
+2026-07-01 11:16:43 | aiorun | Position: 69 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4271
+2026-07-01 11:16:43 | aioschedule | Position: 70 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4272
+2026-07-01 11:16:43 | Argh | Position: 85 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4291
+2026-07-01 11:16:43 | avro-schema | Position: 93 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4311
+2026-07-01 11:16:43 | awscli-plugin-endpoint | Position: 95 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4313
+2026-07-01 11:16:43 | compressed-rtf | Position: 114 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4631
+2026-07-01 11:16:43 | cuid | Position: 117 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4641
+2026-07-01 11:16:43 | dependency-injector | Position: 129 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4658
+2026-07-01 11:16:43 | django_coverage_plugin | Position: 133 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 11:16:43 | django-database-prefix | Position: 134 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 11:16:43 | django-environ | Position: 135 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 11:16:43 | django-guid | Position: 136 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 11:16:43 | django-import-export | Position: 139 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 11:16:43 | django-simple-history | Position: 148 | Priority: LOW (lower priority) | PR: N/A
+2026-07-01 11:16:43 | func-timeout | Position: 173 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4331
+2026-07-01 11:16:43 | google-adk | Position: 176 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4338
+2026-07-01 11:16:43 | google-cloud | Position: 177 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4340
+2026-07-01 11:16:43 | google-cloud-access-context-manager | Position: 178 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4341
+2026-07-01 11:16:43 | google-cloud-functions | Position: 180 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4343
+2026-07-01 11:16:43 | google-cloud-org-policy | Position: 181 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4344
+2026-07-01 11:16:43 | google-cloud-pubsublite | Position: 182 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4346
+2026-07-01 11:16:43 | impyla | Position: 190 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4363
+2026-07-01 11:16:43 | inotify | Position: 191 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4365
+2026-07-01 11:16:43 | itypes | Position: 195 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4368
+2026-07-01 11:16:43 | jdcal | Position: 197 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4369
+2026-07-01 11:16:43 | JSON-log-formatter | Position: 201 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4377
+2026-07-01 11:16:43 | json2html | Position: 202 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4379
+2026-07-01 11:16:43 | Lazify | Position: 215 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4394
+2026-07-01 11:16:43 | Paste | Position: 259 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4493
+2026-07-01 11:16:43 | Pathlib | Position: 260 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4494
+2026-07-01 11:16:43 | petl | Position: 264 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4499
+2026-07-01 11:16:43 | producetrackerBA | Position: 273 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4523
+2026-07-01 11:16:43 | pycron | Position: 282 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4531
+2026-07-01 11:16:43 | pyjsparser | Position: 286 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4547
+2026-07-01 11:16:43 | pyproject-installer | Position: 294 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4557
+2026-07-01 11:16:43 | pyspark-test | Position: 299 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4561
+
