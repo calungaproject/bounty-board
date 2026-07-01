@@ -335,7 +335,6 @@ pytorch
 pyviz-comms
 pywin32
 ratteil
-ravendb-embedded
 red-black-tree-mod
 repoze.lru
 requests-kerberos
@@ -343,7 +342,6 @@ requests-negotiate-sspi
 roboticstoolbox-python
 robotslacker-testcli
 RTFDE
-rule-engine
 samlab
 saxonpy
 scrubadub
@@ -357,19 +355,10 @@ sirius-bio
 slowapi
 smriprep
 snowpark-connect
-soda-core
 soda-core-postgres
-soda-core-spark
 soda-core-spark-df
-sortedcollections
 sourcery
 spectra-ui
-SpeechRecognition
-sphinx_mdinclude
-sphinxcontrib-confluencebuilder
-sphinxcontrib-openapi
-splitfile
-splunk-handler
 splunk-opentelemetry
 sqlalchemy-dremio
 sqlalchemy-pysqlite3-binary
