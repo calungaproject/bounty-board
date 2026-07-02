@@ -205,7 +205,6 @@ onnxruntime
 ont-koi
 openapi-codec
 openinference-instrumentation-google-genai
-opentelemetry-instrumentation-anthropic
 opentelemetry-instrumentation-chromadb
 opentelemetry-instrumentation-confluent-kafka
 opentelemetry-instrumentation-llamaindex
@@ -214,8 +213,6 @@ opentelemetry-instrumentation-openai-v2
 opentelemetry-instrumentation-pinecone
 opentelemetry-instrumentation-psycopg
 opentelemetry-instrumentation-pymssql
-opentelemetry-instrumentation-replicate
-opentelemetry-instrumentation-tortoiseorm
 opentelemetry-instrumentation-transformers
 opentelemetry-instrumentation-vertexai
 openvpn-monitor

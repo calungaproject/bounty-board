@@ -563,3 +563,8 @@
 # Cleared on 2026-07-01 13:11:15
 2026-07-01 13:11:15 | fastapi-azure-auth | Position: 144 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-07-02 09:15:09
+2026-07-02 09:15:09 | opentelemetry-instrumentation-anthropic | Position: 208 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4453
+2026-07-02 09:15:09 | opentelemetry-instrumentation-replicate | Position: 217 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4474
+2026-07-02 09:15:09 | opentelemetry-instrumentation-tortoiseorm | Position: 218 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4475
+
