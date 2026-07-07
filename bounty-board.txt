@@ -16,7 +16,6 @@ banks
 datasets
 faiss-cpu
 griffe
-intervaltree
 ipykernel
 ipynbname
 langchain-community

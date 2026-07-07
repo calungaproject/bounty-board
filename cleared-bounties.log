@@ -568,3 +568,6 @@
 2026-07-02 09:15:09 | opentelemetry-instrumentation-replicate | Position: 217 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4474
 2026-07-02 09:15:09 | opentelemetry-instrumentation-tortoiseorm | Position: 218 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4475
 
+# Cleared on 2026-07-07 16:57:11
+2026-07-07 16:57:11 | intervaltree | Position: 19 | Priority: HIGH (top priority) | PR: N/A
+
