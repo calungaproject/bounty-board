@@ -18,7 +18,6 @@ faiss-cpu
 griffe
 ipykernel
 ipynbname
-langchain-community
 llama-cloud-services
 llama-index
 llama-index-agent-openai

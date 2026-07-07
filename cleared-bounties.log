@@ -571,3 +571,6 @@
 # Cleared on 2026-07-07 16:57:11
 2026-07-07 16:57:11 | intervaltree | Position: 19 | Priority: HIGH (top priority) | PR: N/A
 
+# Cleared on 2026-07-07 17:47:57
+2026-07-07 17:47:57 | langchain-community | Position: 21 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/1895
+
