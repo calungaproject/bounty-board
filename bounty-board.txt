@@ -16,7 +16,6 @@ banks
 datasets
 faiss-cpu
 griffe
-ipykernel
 ipynbname
 llama-cloud-services
 llama-index
