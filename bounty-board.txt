@@ -304,7 +304,6 @@ Topsis-Raj-102217077
 traceloop-sdk
 transformers
 typing
-typish
 ultrajson
 umap-learn
 uritemplate-py
