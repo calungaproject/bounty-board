@@ -590,3 +590,7 @@
 2026-07-09 09:17:10 | llama-index-llms-openai | Position: 26 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4224
 2026-07-09 09:17:10 | llama-parse | Position: 32 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1913
 
+# Cleared on 2026-07-09 11:13:36
+2026-07-09 11:13:36 | mock-alchemy | Position: 180 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4420
+2026-07-09 11:13:36 | opentelemetry-instrumentation-llamaindex | Position: 198 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4464
+

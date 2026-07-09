@@ -177,7 +177,6 @@ llsi
 llvmlite
 markitdown
 MLMCPy
-mock-alchemy
 mongomock-motor
 mosmart
 mysql-connector-python
@@ -195,7 +194,6 @@ openapi-codec
 openinference-instrumentation-google-genai
 opentelemetry-instrumentation-chromadb
 opentelemetry-instrumentation-confluent-kafka
-opentelemetry-instrumentation-llamaindex
 opentelemetry-instrumentation-milvus
 opentelemetry-instrumentation-openai-v2
 opentelemetry-instrumentation-pinecone
