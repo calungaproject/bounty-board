@@ -135,7 +135,6 @@ flask-mongoengine
 flask-restplus
 flask-swagger
 flask-talisman
-Flask-WTF
 FlatBuffers
 fmriprep
 frozendict
