@@ -16,7 +16,6 @@ banks
 datasets
 faiss-cpu
 griffe
-ipynbname
 llama-cloud-services
 llama-index
 llama-index-agent-openai
