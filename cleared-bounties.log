@@ -615,3 +615,6 @@
 2026-07-10 15:05:05 | llama-index-program-openai | Position: 21 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4226
 2026-07-10 15:05:05 | rank-bm25 | Position: 42 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4249
 
+# Cleared on 2026-07-10 16:00:38
+2026-07-10 16:00:38 | llama-index-readers-llama-parse | Position: 19 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4229
+

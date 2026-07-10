@@ -16,7 +16,6 @@ datasets
 faiss-cpu
 llama-index-question-gen-openai
 llama-index-readers-file
-llama-index-readers-llama-parse
 milvus-lite
 nemollm
 openinference-instrumentation-anthropic
