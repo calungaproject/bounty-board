@@ -603,3 +603,7 @@
 # Cleared on 2026-07-10 11:13:20
 2026-07-10 11:13:20 | opentelemetry-instrumentation-openai-v2 | Position: 197 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4469
 
+# Cleared on 2026-07-10 12:55:42
+2026-07-10 12:55:42 | aws-sam-cli | Position: 74 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4312
+2026-07-10 12:55:42 | black | Position: 79 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1527
+
