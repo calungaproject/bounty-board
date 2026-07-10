@@ -600,3 +600,6 @@
 # Cleared on 2026-07-09 15:14:46
 2026-07-09 15:14:46 | Flask-WTF | Position: 138 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4326
 
+# Cleared on 2026-07-10 11:13:20
+2026-07-10 11:13:20 | opentelemetry-instrumentation-openai-v2 | Position: 197 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4469
+

@@ -194,7 +194,6 @@ openinference-instrumentation-google-genai
 opentelemetry-instrumentation-chromadb
 opentelemetry-instrumentation-confluent-kafka
 opentelemetry-instrumentation-milvus
-opentelemetry-instrumentation-openai-v2
 opentelemetry-instrumentation-pinecone
 opentelemetry-instrumentation-psycopg
 opentelemetry-instrumentation-pymssql
