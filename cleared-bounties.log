@@ -607,3 +607,11 @@
 2026-07-10 12:55:42 | aws-sam-cli | Position: 74 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4312
 2026-07-10 12:55:42 | black | Position: 79 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1527
 
+# Cleared on 2026-07-10 15:05:05
+2026-07-10 15:05:05 | llama-index-agent-openai | Position: 17 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4219
+2026-07-10 15:05:05 | llama-index-cli | Position: 18 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4220
+2026-07-10 15:05:05 | llama-index-indices-managed-llama-cloud | Position: 19 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4223
+2026-07-10 15:05:05 | llama-index-multi-modal-llms-openai | Position: 20 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4225
+2026-07-10 15:05:05 | llama-index-program-openai | Position: 21 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4226
+2026-07-10 15:05:05 | rank-bm25 | Position: 42 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4249
+
