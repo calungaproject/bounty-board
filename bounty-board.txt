@@ -8,7 +8,6 @@ openinference-instrumentation-google-adk
 openinference-instrumentation-langchain
 openinference-instrumentation-openai
 openinference-instrumentation-vertexai
-pyarrow
 spacy
 thinc
 tokenizers
