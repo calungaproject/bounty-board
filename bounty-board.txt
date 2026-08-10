@@ -1,7 +1,6 @@
 arize-phoenix
 arize-phoenix-otel
 gitpython
-litellm
 openinference-instrumentation-google-adk
 openinference-instrumentation-langchain
 openinference-instrumentation-openai
@@ -286,7 +285,6 @@ teradatasql
 teradatasqlalchemy
 Topsis-Raj-102217077
 traceloop-sdk
-transformers
 typing
 ultrajson
 umap-learn

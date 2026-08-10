@@ -627,3 +627,7 @@
 2026-08-10 13:39:25 | tokenizers | Position: 13 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2071
 2026-08-10 13:39:25 | datasets | Position: 14 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2132
 
+# Cleared on 2026-08-10 14:33:25
+2026-08-10 14:33:25 | litellm | Position: 4 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2099
+2026-08-10 14:33:25 | transformers | Position: 289 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2070
+
