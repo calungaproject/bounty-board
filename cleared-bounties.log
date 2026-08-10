@@ -621,3 +621,9 @@
 # Cleared on 2026-07-30 12:44:42
 2026-07-30 12:44:42 | pyarrow | Position: 11 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/1991
 
+# Cleared on 2026-08-10 13:39:25
+2026-08-10 13:39:25 | hf-xet | Position: 4 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2074
+2026-08-10 13:39:25 | huggingface-hub | Position: 5 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2035
+2026-08-10 13:39:25 | tokenizers | Position: 13 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2071
+2026-08-10 13:39:25 | datasets | Position: 14 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2132
+

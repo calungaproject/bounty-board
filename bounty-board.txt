@@ -1,8 +1,6 @@
 arize-phoenix
 arize-phoenix-otel
 gitpython
-hf-xet
-huggingface-hub
 litellm
 openinference-instrumentation-google-adk
 openinference-instrumentation-langchain
@@ -10,8 +8,6 @@ openinference-instrumentation-openai
 openinference-instrumentation-vertexai
 spacy
 thinc
-tokenizers
-datasets
 faiss-cpu
 llama-index-question-gen-openai
 llama-index-readers-file
