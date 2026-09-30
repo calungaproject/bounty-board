@@ -225,16 +225,11 @@ pyspark-cloud
 pysqlite3
 pysqlite3-binary
 pytds
-pytest-aioresponses
-pytest-base-url
-pytest-bdd
 pytest-cov
 pytest-html
 pytest-metadata
 pytest-pilot
 pytest-playwright
-pytest-print
-pytest-reportlog
 pytest-responses
 pytest-runner
 python-docx-ng

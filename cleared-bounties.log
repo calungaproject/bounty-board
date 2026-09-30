@@ -631,3 +631,10 @@
 2026-08-10 14:33:25 | litellm | Position: 4 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/2099
 2026-08-10 14:33:25 | transformers | Position: 289 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2070
 
+# Cleared on 2026-09-30 14:27:35
+2026-09-30 14:27:35 | pytest-aioresponses | Position: 228 | Priority: LOW (lower priority) | PR: N/A
+2026-09-30 14:27:35 | pytest-base-url | Position: 229 | Priority: LOW (lower priority) | PR: N/A
+2026-09-30 14:27:35 | pytest-bdd | Position: 230 | Priority: LOW (lower priority) | PR: N/A
+2026-09-30 14:27:35 | pytest-print | Position: 236 | Priority: LOW (lower priority) | PR: N/A
+2026-09-30 14:27:35 | pytest-reportlog | Position: 237 | Priority: LOW (lower priority) | PR: N/A
+
