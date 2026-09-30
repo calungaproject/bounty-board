@@ -647,3 +647,6 @@
 2026-09-30 16:27:57 | en-core-web-sm-mirror | Position: 114 | Priority: LOW (lower priority) | PR: N/A
 2026-09-30 16:27:57 | sighted | Position: 254 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-09-30 20:24:49
+2026-09-30 20:24:49 | llama-index-question-gen-openai | Position: 9 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/4227
+
