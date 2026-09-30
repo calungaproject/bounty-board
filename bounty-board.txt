@@ -87,7 +87,6 @@ datamodel-code-generator
 db-dtypes
 db-sqlite3
 DBNavigator
-deepeval
 desimodel
 dijkprofile-annotator
 django-celery-beat
