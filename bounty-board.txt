@@ -5,8 +5,6 @@ openinference-instrumentation-google-adk
 openinference-instrumentation-langchain
 openinference-instrumentation-openai
 openinference-instrumentation-vertexai
-spacy
-thinc
 faiss-cpu
 llama-index-question-gen-openai
 llama-index-readers-file
@@ -111,7 +109,6 @@ duckdb-extension-fts
 duckdb-extension-vss
 duckdb-extensions
 easygui
-en-core-web-sm-mirror
 facets-overview
 Flake8-pyproject
 Flask-Inputs
@@ -251,7 +248,6 @@ seqnado
 sf-hamilton
 shap
 shapely
-sighted
 sirius-bio
 slowapi
 smriprep

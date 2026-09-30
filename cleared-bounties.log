@@ -641,3 +641,9 @@
 # Cleared on 2026-09-30 15:26:18
 2026-09-30 15:26:18 | deepeval | Position: 90 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4657
 
+# Cleared on 2026-09-30 16:27:57
+2026-09-30 16:27:57 | spacy | Position: 8 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/1917
+2026-09-30 16:27:57 | thinc | Position: 9 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/1911
+2026-09-30 16:27:57 | en-core-web-sm-mirror | Position: 114 | Priority: LOW (lower priority) | PR: N/A
+2026-09-30 16:27:57 | sighted | Position: 254 | Priority: LOW (lower priority) | PR: N/A
+
