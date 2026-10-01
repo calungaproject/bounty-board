@@ -290,7 +290,6 @@ wagtail-icons
 wagtail-markdown
 wagtail-seo
 wagtailcharts
-waitress
 weighted-kdtree
 win_unicode_console
 xhtml2pdf
