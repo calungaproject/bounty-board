@@ -21,7 +21,6 @@ openinference-instrumentation-openai-agents
 openinference-instrumentation-smolagents
 polyfile-weave
 pyreadline3
-pythran
 ragaai-catalyst
 ragas
 scikit-learn
