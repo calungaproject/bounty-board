@@ -663,3 +663,18 @@
 2026-10-08 13:28:59 | scikit-learn | Position: 25 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1722
 2026-10-08 13:28:59 | scipy | Position: 26 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1989
 
+# Cleared on 2026-10-08 15:24:34
+2026-10-08 15:24:34 | awswrangler | Position: 54 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/2098
+2026-10-08 15:24:34 | clarabel | Position: 67 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/4623
+2026-10-08 15:24:34 | hyperopt | Position: 124 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4357
+2026-10-08 15:24:34 | lale | Position: 141 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4387
+2026-10-08 15:24:34 | MLMCPy | Position: 154 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4414
+2026-10-08 15:24:34 | polars | Position: 190 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/1851
+2026-10-08 15:24:34 | polars-runtime-32 | Position: 191 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/1484
+2026-10-08 15:24:34 | pytest-cov | Position: 219 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2053
+2026-10-08 15:24:34 | pytest-metadata | Position: 221 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2272
+2026-10-08 15:24:34 | roboticstoolbox-python | Position: 235 | Priority: LOW (lower priority) | PR: N/A
+2026-10-08 15:24:34 | scrubadub | Position: 240 | Priority: LOW (lower priority) | PR: N/A
+2026-10-08 15:24:34 | statsmodels | Position: 258 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/1907
+2026-10-08 15:24:34 | sysidentpy | Position: 264 | Priority: LOW (lower priority) | PR: N/A
+

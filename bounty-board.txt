@@ -51,7 +51,6 @@ autoai-libs
 autogen
 autogenstudio
 av
-awswrangler
 azure-monitor-opentelemetry
 base-flask-structure
 behave-pandas
@@ -64,7 +63,6 @@ caugetch
 cdk8s
 chainlit
 chromadb
-clarabel
 clr_loader
 cmeel-fmt
 coderedcms
@@ -121,7 +119,6 @@ google-generativeai
 grandalf
 h5py
 healthcheck
-hyperopt
 ibm_db
 impact
 invenio-pages
@@ -138,7 +135,6 @@ keras
 keras-mri
 koalas
 krb5
-lale
 langchain-google-vertexai
 langchain-tools
 langgraph-checkpoint-redis
@@ -151,7 +147,6 @@ literalai
 llsi
 llvmlite
 markitdown
-MLMCPy
 mongomock-motor
 mosmart
 mysql-connector-python
@@ -187,8 +182,6 @@ phoenix
 pip-system-certs
 pipreqs
 pipreqsnb
-polars
-polars-runtime-32
 polling2
 PoseR-napari
 prophet
@@ -216,9 +209,7 @@ pyspark-cloud
 pysqlite3
 pysqlite3-binary
 pytds
-pytest-cov
 pytest-html
-pytest-metadata
 pytest-pilot
 pytest-playwright
 pytest-responses
@@ -232,12 +223,10 @@ pywin32
 ratteil
 requests-kerberos
 requests-negotiate-sspi
-roboticstoolbox-python
 robotslacker-testcli
 RTFDE
 samlab
 saxonpy
-scrubadub
 sentence-transformers
 seqnado
 sf-hamilton
@@ -255,13 +244,11 @@ sqlalchemy-pysqlite3-binary
 sqlalchemy-views
 sqlIite
 sspilib
-statsmodels
 streamlit
 streamlit-cognito-auth
 streamlit-cookies-controller
 streamlit-js-eval
 strptime-cli
-sysidentpy
 telepath
 TensorFlow
 teradataml
