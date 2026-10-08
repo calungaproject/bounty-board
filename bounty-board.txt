@@ -22,8 +22,6 @@ polyfile-weave
 pyreadline3
 ragaai-catalyst
 ragas
-scikit-learn
-scipy
 wandb
 weave
 adbc-driver-flightsql

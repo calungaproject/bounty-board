@@ -659,3 +659,7 @@
 # Cleared on 2026-10-08 12:36:44
 2026-10-08 12:36:44 | gitpython | Position: 3 | Priority: HIGH (top priority) | PR: https://github.com/calungaproject/index/pull/1410
 
+# Cleared on 2026-10-08 13:28:59
+2026-10-08 13:28:59 | scikit-learn | Position: 25 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1722
+2026-10-08 13:28:59 | scipy | Position: 26 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1989
+
