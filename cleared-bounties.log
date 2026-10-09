@@ -678,3 +678,8 @@
 2026-10-08 15:24:34 | statsmodels | Position: 258 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/1907
 2026-10-08 15:24:34 | sysidentpy | Position: 264 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-10-09 17:20:41
+2026-10-09 17:20:41 | datamodel-code-generator | Position: 77 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/2420
+2026-10-09 17:20:41 | osqp | Position: 175 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4485
+2026-10-09 17:20:41 | pytest-html | Position: 212 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2313
+

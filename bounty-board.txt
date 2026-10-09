@@ -74,7 +74,6 @@ cx_Oracle
 dagster
 dagster-graphql
 databricks-connect
-datamodel-code-generator
 db-dtypes
 db-sqlite3
 DBNavigator
@@ -172,7 +171,6 @@ opentelemetry-instrumentation-transformers
 opentelemetry-instrumentation-vertexai
 openvpn-monitor
 openXJV
-osqp
 panel
 panel-graphic-walker
 pcodedmp
@@ -209,7 +207,6 @@ pyspark-cloud
 pysqlite3
 pysqlite3-binary
 pytds
-pytest-html
 pytest-pilot
 pytest-playwright
 pytest-responses
