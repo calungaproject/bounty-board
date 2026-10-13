@@ -246,7 +246,6 @@ streamlit-cognito-auth
 streamlit-cookies-controller
 streamlit-js-eval
 strptime-cli
-telepath
 TensorFlow
 teradataml
 teradatamlwidgets
