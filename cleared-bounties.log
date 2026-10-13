@@ -686,3 +686,8 @@
 # Cleared on 2026-10-13 14:29:09
 2026-10-13 14:29:09 | telepath | Position: 249 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-10-13 15:26:23
+2026-10-13 15:26:23 | langgraph-checkpoint-redis | Position: 139 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4391
+2026-10-13 15:26:23 | opentelemetry-instrumentation-transformers | Position: 170 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4476
+2026-10-13 15:26:23 | slowapi | Position: 233 | Priority: LOW (lower priority) | PR: N/A
+

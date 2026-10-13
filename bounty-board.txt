@@ -136,7 +136,6 @@ koalas
 krb5
 langchain-google-vertexai
 langchain-tools
-langgraph-checkpoint-redis
 lava-dl
 leadtools-common-runtime
 LIEF
@@ -167,7 +166,6 @@ opentelemetry-instrumentation-milvus
 opentelemetry-instrumentation-pinecone
 opentelemetry-instrumentation-psycopg
 opentelemetry-instrumentation-pymssql
-opentelemetry-instrumentation-transformers
 opentelemetry-instrumentation-vertexai
 openvpn-monitor
 openXJV
@@ -230,7 +228,6 @@ sf-hamilton
 shap
 shapely
 sirius-bio
-slowapi
 smriprep
 snowpark-connect
 soda-core-postgres
