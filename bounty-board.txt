@@ -87,10 +87,8 @@ django-jsonfield
 django-linear-migrations
 django-mails
 django-modelcluster
-django-mssql
 django-mssql-backend
 django-redis-cache
-django-sqlserver
 django-static-upstream
 django-timezone-field
 djongo-itday
@@ -107,7 +105,6 @@ Flask-Inputs
 flask-mongoengine
 flask-restplus
 flask-swagger
-flask-talisman
 FlatBuffers
 fmriprep
 frozendict
@@ -145,7 +142,6 @@ literalai
 llsi
 llvmlite
 markitdown
-mongomock-motor
 mosmart
 mysql-connector-python
 napari-noise2vst

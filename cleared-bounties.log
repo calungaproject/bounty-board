@@ -691,3 +691,9 @@
 2026-10-13 15:26:23 | opentelemetry-instrumentation-transformers | Position: 170 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4476
 2026-10-13 15:26:23 | slowapi | Position: 233 | Priority: LOW (lower priority) | PR: N/A
 
+# Cleared on 2026-10-13 16:27:43
+2026-10-13 16:27:43 | django-mssql | Position: 90 | Priority: MEDIUM (secondary priority) | PR: N/A
+2026-10-13 16:27:43 | django-sqlserver | Position: 93 | Priority: MEDIUM (secondary priority) | PR: N/A
+2026-10-13 16:27:43 | flask-talisman | Position: 110 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4324
+2026-10-13 16:27:43 | mongomock-motor | Position: 148 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4423
+
