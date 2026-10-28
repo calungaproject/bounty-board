@@ -697,3 +697,7 @@
 2026-10-13 16:27:43 | flask-talisman | Position: 110 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4324
 2026-10-13 16:27:43 | mongomock-motor | Position: 148 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/4423
 
+# Cleared on 2026-10-28 13:17:28
+2026-10-28 13:17:28 | ipywidgets | Position: 122 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2222
+2026-10-28 13:17:28 | jupyterlab-widgets | Position: 129 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2220
+
