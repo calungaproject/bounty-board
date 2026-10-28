@@ -701,3 +701,6 @@
 2026-10-28 13:17:28 | ipywidgets | Position: 122 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2222
 2026-10-28 13:17:28 | jupyterlab-widgets | Position: 129 | Priority: LOW (lower priority) | PR: https://github.com/calungaproject/index/pull/2220
 
+# Cleared on 2026-10-28 16:19:23
+2026-10-28 16:19:23 | bs4 | Position: 59 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1792
+

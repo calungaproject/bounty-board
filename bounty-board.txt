@@ -56,7 +56,6 @@ base-flask-structure
 behave-pandas
 blink1
 botright
-bs4
 Card-Validator
 catboost
 caugetch
