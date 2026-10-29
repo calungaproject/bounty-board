@@ -704,3 +704,6 @@
 # Cleared on 2026-10-28 16:19:23
 2026-10-28 16:19:23 | bs4 | Position: 59 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/1792
 
+# Cleared on 2026-10-29 14:18:19
+2026-10-29 14:18:19 | apache-airflow-providers-common-sql | Position: 34 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/2239
+

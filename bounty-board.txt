@@ -31,7 +31,6 @@ aioduckdb
 aioodbc
 aioredis
 andisdk
-apache-airflow-providers-common-sql
 apache-airflow-providers-ftp
 apache-airflow-providers-http
 apache-airflow-providers-imap
