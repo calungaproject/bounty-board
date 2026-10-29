@@ -707,3 +707,6 @@
 # Cleared on 2026-10-29 14:18:19
 2026-10-29 14:18:19 | apache-airflow-providers-common-sql | Position: 34 | Priority: MEDIUM (secondary priority) | PR: https://github.com/calungaproject/index/pull/2239
 
+# Cleared on 2026-10-29 19:14:31
+2026-10-29 19:14:31 | django-linear-migrations | Position: 85 | Priority: MEDIUM (secondary priority) | PR: N/A
+

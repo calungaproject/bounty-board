@@ -82,7 +82,6 @@ django-health-check
 django-helpdesk
 django-jazzmin
 django-jsonfield
-django-linear-migrations
 django-mails
 django-modelcluster
 django-mssql-backend
