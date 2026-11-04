@@ -247,7 +247,6 @@ umap-learn
 uritemplate-py
 urllib3-lts-py38
 usaddress
-uvicorn-worker
 uwsgidecorators
 venv-pack
 vertexai
